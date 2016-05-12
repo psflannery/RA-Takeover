@@ -1,0 +1,151 @@
+//
+// Buttons
+// --------------------------------------------------
+
+.ot-btn-container {
+	text-align: center;
+    position: fixed;
+    right: @launch-btn-gutter-width;
+    bottom: @launch-btn-gutter-width;
+    z-index: @zindex-launch-button;
+}
+.ot-btn-main-menu {
+	position: relative;
+	display: inline-block;
+	-webkit-touch-callout: none;
+    .user-select(none);
+	cursor: pointer;
+    &.menu--open {
+        .ot-btn-menu-items {
+            li {
+                &:first-child {
+                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position*8, 0);
+                }
+                &:nth-child(2) {
+                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position*7, 0);
+                }
+                &:nth-child(3) {
+                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position*6, 0);
+                }
+                &:nth-child(4) {
+                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position*5, 0);
+                }
+                &:nth-child(5) {
+                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position*4, 0);
+                }
+                &:nth-child(6) {
+                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position*3, 0);
+                }
+                &:nth-child(7) {
+                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position*2, 0);
+                }
+                &:nth-child(8) {
+                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position, 0);
+                }
+                &:nth-child(9) {
+                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position, 0px, 0);
+                }
+                &:nth-child(10) {
+                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*2, 0px, 0);
+                }
+                &:nth-child(11) {
+                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*3, 0px, 0);
+                }
+                &:nth-child(12) {
+                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*4, 0px, 0);
+                }
+                &:nth-child(13) {
+                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*5, 0px, 0);
+                }
+                &:nth-child(14) {
+                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*6, 0px, 0);
+                }
+                &:nth-child(15) {
+                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*7, 0px, 0);
+                }
+                &:nth-child(16) {
+                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*8, 0px, 0);
+                }
+                &:nth-child(17) {
+                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*9, 0px, 0);
+                }
+            }
+        }      
+    }
+}
+.ot-menu-trigger {
+	background: none;
+	.square(100px);
+	padding: 0;
+	margin: 0;
+	border: none;
+	outline: none;
+	text-align: center;
+	color: @launch-btn-text-color;
+	position: relative;
+	z-index: @zindex-launch-btn;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent; /* For some Androids */
+}
+.ot-btn-menu-items {
+	position: absolute;
+	.square(100%);
+	top: 0;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	//z-index: 5;
+    @media (max-width: @screen-sm-max) {
+        .scale3d(0.8; 0.8; 1);
+    }
+    li {
+        .square(@avatar-size);
+        top: 10%;
+        left: 15%;
+        position: absolute;
+        z-index: @zindex-behind;
+        .transform-origin(50% 50%);
+        .scale3d(0.5, 0.5, 1);
+        .transition(0.25s ease-out);
+        button {
+            display: block;
+            border-radius: 50%;
+            box-shadow: 0 1px 10px fade(#000000, 15%);
+            outline: none;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-tap-highlight-color: transparent; /* For some Androids */
+            padding: 0;
+            border: 0;
+            text-align: center;
+            vertical-align: middle;
+            touch-action: manipulation;
+            cursor: pointer;
+            background-image: none;
+            white-space: nowrap;
+            &:hover, &:focus {
+                //background: #272c2c;
+                //color: #777
+            }
+        }
+    }
+    img {
+        vertical-align: bottom;
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+    }
+}
+.ot-morph-shape {
+	position: absolute;
+	.square(100%);
+	top: 0;
+	left: 0;
+	z-index: @zindex-launch-btn;
+    svg {
+        fill: @launch-btn-fill-color;
+        .transition(fill 0.3s); 
+        .menu--open & {
+            fill: @launch-btn-fill-color-open;
+        }
+    }
+}

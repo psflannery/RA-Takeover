@@ -1,0 +1,98 @@
+//
+// Variables
+// --------------------------------------------------
+
+//== Launch button
+//
+//##
+
+//** avatars
+@avatar-size:                   60px;
+@avatar-spacing:                20px;
+@avatar-position:               @avatar-size + @avatar-spacing;
+
+//** launch button
+@launch-btn-text-color:         #fff;
+@launch-btn-fill-color:         #ff0000;
+@launch-btn-fill-color-open:    #777;
+
+//** Spacing
+@launch-btn-gutter-width:       15px; // bring inline with main RA styles.
+
+
+//== Tooltips
+//
+//##
+
+//** Tooltip colors and sizes
+@tooltip-background-color:      rgba(17, 17, 17, 0.9);
+@tooltip-text-color:            #fff;
+@tooltip-border-radius:         4px;
+@tooltip-font-size:             12px;
+
+//** Tooltip body
+@tooltip-margin-small:          5px;
+@tooltip-margin-large:          11px;
+
+//** Tooltip arrow
+@tooltip-arrow-width:           18px;
+@tooltip-arrow-hieght:          @tooltip-arrow-width;
+
+//** Tooltip sizes
+@tooltip-length-small:          80px;
+@tooltip-length-medium:         150px;
+@tooltip-length-large:          260px;
+@tooltip-length-xlarge:         380px;
+@tooltip-length-xlarge-xs-max:  90vw;
+
+
+//-- Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+
+@zindex-behind:            -1;
+@zindex-launch-btn:        100;
+@zindex-tooltip:           1000;
+@zindex-launch-button:     1010;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+//** Deprecated `@screen-xs` as of v3.0.1
+@screen-xs:                  480px;
+//** Deprecated `@screen-xs-min` as of v3.2.0
+@screen-xs-min:              @screen-xs;
+//** Deprecated `@screen-phone` as of v3.0.1
+@screen-phone:               @screen-xs-min;
+
+// Small screen / tablet
+//** Deprecated `@screen-sm` as of v3.0.1
+@screen-sm:                  768px;
+@screen-sm-min:              @screen-sm;
+//** Deprecated `@screen-tablet` as of v3.0.1
+@screen-tablet:              @screen-sm-min;
+
+// Medium screen / desktop
+//** Deprecated `@screen-md` as of v3.0.1
+@screen-md:                  992px;
+@screen-md-min:              @screen-md;
+//** Deprecated `@screen-desktop` as of v3.0.1
+@screen-desktop:             @screen-md-min;
+
+// Large screen / wide desktop
+//** Deprecated `@screen-lg` as of v3.0.1
+@screen-lg:                  1200px;
+@screen-lg-min:              @screen-lg;
+//** Deprecated `@screen-lg-desktop` as of v3.0.1
+@screen-lg-desktop:          @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm-min - 1);
+@screen-sm-max:              (@screen-md-min - 1);
+@screen-md-max:              (@screen-lg-min - 1);
