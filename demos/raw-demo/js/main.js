@@ -17,7 +17,6 @@
             },
             // Since the markup is constant, let's just create a single string of HTML
             sounds = '<audio id="ot-noise" src="" loop></audio>',
-            indicator = '<div id="indicator"></div><div id="full-screen"></div>',
             otButton = '<div class="ot-btn-container">' +
                          '<div class="ot-btn-main">' +
                            '<nav class="ot-btn-main-menu">' +
@@ -64,7 +63,7 @@
                            '</nav>' + 
                          '</div>' +
                        '</div>';
-        $('body').append(otButton, indicator, sounds);
+        $('body').append(otButton, sounds);
     }
 
     function ot_expand_menu() {
