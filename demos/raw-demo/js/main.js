@@ -15,6 +15,7 @@
               rest: 'M281,150c0,71.797-59.203,131-131,131S19,221.797,19,150S78.203,19,150,19S281,78.203,281,150z',
               active: 'M251,150c0,93.5-29.203,143-101,143S49,243.5,49,150C49,52.5,78.203,7,150,7S251,51.5,251,150z'
             },
+            students = ['Rhys Coren', 'Rian Coughlan', 'Elliot Dodd', 'Alana Francis', 'Kira Freije', 'Gery Georgieva', 'Anna Hughes', 'Frank Kent', 'Neill Kidgell', 'Jack Killick', 'Molly Palmer', 'Anna Paterson', 'Robin Seir', 'Rafal Topolewski', 'Claire Undy', 'Wanda Wieser', 'Tom Worsfold'],
             // Since the markup is constant, let's just create a single string of HTML
             sounds = '<audio id="ot-noise" src="" loop></audio>',
             otButton = '<div class="ot-btn-container">' +
@@ -23,42 +24,36 @@
                              '<span class="ot-morph-shape" data-morph-active="' + paths.active + '">' +
                                '<svg id="ot-launch" width="100%" height="100%" viewBox="0 0 300 300" preserveAspectRatio="none">' +
                                 '<defs>' +
-                                    '<filter id="dropshadow" height="130%">' +
-                                        '<feGaussianBlur in="SourceAlpha" stdDeviation="10"/>' +
-                                        '<feOffset dx="2" dy="2" result="offsetblur"/>' +
-                                        '<feComponentTransfer>' +
-                                            '<feFuncA type="linear" slope="0.2"/>' +
-                                        '</feComponentTransfer>' +
-                                        '<feMerge>' +
-                                            '<feMergeNode/>' +
-                                            '<feMergeNode in="SourceGraphic"/>' +
-                                        '</feMerge>' +
+                                    '<filter id="dropshadow" width="200%" height="200%">' +
+                                        '<feOffset dx="0" dy="0" result="offsetblur" in="SourceGraphic"/>' +
+                                        '<feGaussianBlur result="blurOut" in="offOut" stdDeviation="5"/>' +
+                                        '<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />' +
                                     '</filter>' +
                                 '</defs>' +
-                                 '<path d="' + paths.rest + '" filter="url(#dropshadow)"/>' +
+                                '<path d="' + paths.rest + '" filter="url(#dropshadow)"/>' +
                                '</svg>' +
                              '</span>' +
                              '<button type="button" class="ot-menu-trigger" data-toggle="ot-menu" data-text-swap="Stop!" aria-controls="student-list" aria-expanded="false">' +
                                '<span>Click</span>' +
                              '</button>' +
                              '<ul id="student-list" class="ot-btn-menu-items" role="group">' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Rhys Coren" data-placement="left" data-mp3="../../assets/rhys-sound.mp3" data-tint="#00FF00"><img src="../../assets/rhys-button.jpg"><span class="sr-only">Rhys Coren</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Rian Coughlan" data-placement="left" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">Rian Coughlan</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Elliot Dodd" data-placement="left" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">Elliot Dodd</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Alana Francis" data-placement="left" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">Alana Francis</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Kira Freije" data-placement="left" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">Kira Freije</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Gery Georgieva" data-placement="left" data-mp3="../../assets/gery-sound.m4a" data-tint="#FFC0CB"><img src="../../assets/gery-button.jpg" style="height: 60px; width: 60px"><span class="sr-only">Gery Georgieva</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Anna Hughes" data-placement="left" data-mp3="../../assets/anna-h-sound.mp3" data-tint="#CCCFFF"><img src="../../assets/anna-h-button.jpg" style="height: 60px"><span class="sr-only">Anna Hughes</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Frank Kent" data-placement="left" data-mp3="../../assets/WET_SLOW.mp3" data-tint="#00FFFF"><img src="../../assets/anon.png"><span class="sr-only">Frank Kent</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Neill Kidgell" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3" data-tint="#FFFF00"><img src="../../assets/anon.png"><span class="sr-only">Neill Kidgell</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Jack Killick" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3" data-tint="#FF0000"><img src="../../assets/anon.png"><span class="sr-only">Jack Killick</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Molly Palmer" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">Molly Palmer</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Anna Paterson" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">Anna Paterson</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Robin Seir" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">Robin Seir</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Rafal Topolewski" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">Rafal Topolewski</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Claire Undy" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">Claire Undy</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Wanda Wieser" data-placement="top" data-mp3="../../assets/wanda-sound.mp3" data-tint="#E0B095"><img src="../../assets/wanda-button.jpg" style="height: 60px"><span class="sr-only">Wanda Wieser</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="Tom Worsfold" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">Tom Worsfold</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[0] + '" data-placement="right" data-mp3="../../assets/rhys-sound.mp3" data-tint="#00FF00"><img src="../../assets/rhys-button.jpg"><span class="sr-only">' + students[0] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[1] + '" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">' + students[1] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[2] + '" data-placement="left" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">' + students[2] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[3] + '" data-placement="left" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">' + students[3] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[4] + '" data-placement="left" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">' + students[4] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[5] + '" data-placement="left" data-mp3="../../assets/gery-sound.m4a" data-tint="#FFC0CB"><img src="../../assets/gery-button.jpg"><span class="sr-only">' + students[5] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[6] + '" data-placement="left" data-mp3="../../assets/anna-h-sound.mp3" data-tint="#CCCFFF"><img src="../../assets/anna-h-button.jpg"><span class="sr-only">' + students[6] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[7] + '" data-placement="bottom" data-mp3="../../assets/WET_SLOW.mp3" data-tint="#00FFFF"><img src="../../assets/anon.png"><span class="sr-only">' + students[7] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[8] + '" data-placement="bottom" data-mp3="../../assets/WET_SLOW.mp3" data-tint="#FFFF00"><img src="../../assets/anon.png"><span class="sr-only">' + students[8] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[9] + '" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3" data-tint="#FF0000"><img src="../../assets/anon.png"><span class="sr-only">' + students[9] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[10] + '" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">' + students[10] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[11] + '" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">' + students[11] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[12] + '" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">' + students[12] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[13] + '" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">' + students[13] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[14] + '" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">' + students[14] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[15] + '" data-placement="top" data-mp3="../../assets/wanda-sound.mp3" data-tint="#E0B095"><img src="../../assets/wanda-button.jpg"><span class="sr-only">' + students[15] + '</span></button></li>' +
+                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[16] + '" data-placement="top" data-mp3="../../assets/WET_SLOW.mp3"><img src="../../assets/anon.png"><span class="sr-only">' + students[16] + '</span></button></li>' +
                              '</ul>' +
                            '</nav>' + 
                          '</div>' +
@@ -67,9 +62,11 @@
     }
 
     function ot_expand_menu() {
+        var ot_first_click = true;
+        
         $('[data-toggle="ot-menu"]').on(eventtype, function(e){
             e.preventDefault();
-
+                        
             var $otBtn = $('.ot-btn-main-menu'),
                 otBtnOpen = 'menu--open',
                 s = new Snap('#ot-launch'),
@@ -80,9 +77,20 @@
                     active: $('.ot-morph-shape').data('morph-active')
                 },
                 audio = $('#ot-noise');
+                
+            // Preload the background images
+            if(ot_first_click === true) {
+                ot_bg_preloader(
+                    '../../assets/rhys-bg.gif',
+                    '../../assets/gery-bg.jpg',
+                    '../../assets/anna-h-bg.jpg',
+                    '../../assets/wanda-bg.jpg'
+                );
+                ot_first_click = false;
+            };
             
             // Toggle the button class and set timings for the animation
-            $otBtn.hasClass(otBtnOpen) ? $otBtn.removeClass(otBtnOpen) : setTimeout( function() {$otBtn.addClass(otBtnOpen);}, 175 );
+            $otBtn.hasClass(otBtnOpen) ? $otBtn.removeClass(otBtnOpen) : setTimeout( function() { $otBtn.addClass(otBtnOpen); }, 175 );
             
             // Toggle aria-expanded
             el.attr('aria-expanded', function (i, attr) {
@@ -96,10 +104,10 @@
 
             // Swap out the text in the switch
             if (el.text() === el.data('text-swap')) {
-              el.text(el.data('text-original'));
+                el.text(el.data('text-original'));
             } else {
-              el.data('text-original', el.text());
-              el.text(el.data('text-swap'));
+                el.data('text-original', el.text());
+                el.text(el.data('text-swap'));
             }
 
             // Turn off the takeover from the main menu button
@@ -125,13 +133,6 @@
 
                 takeover = false;
             }
-        }).one(eventtype, function() {
-            ot_bg_preloader(
-                '../../assets/rhys-bg.gif',
-                '../../assets/gery-bg.jpg',
-                '../../assets/anna-h-bg.jpg',
-                '../../assets/wanda-bg.jpg'
-            );
         });
     }
     
@@ -142,13 +143,13 @@
             var l=d.length,
                 RGB=new Object();
             if(l>9) {
-                d = d.split( "," );
+                d = d.split(",");
                 if( d.length < 3 || d.length > 4 )return null; //ErrorCheck
-                RGB[0] = i( d[0].slice(4) ), RGB[1] = i( d[1] ), RGB[2]=i( d[2] ), RGB[3] = d[3] ? parseFloat( d[3] ) : -1;
+                RGB[0] = i(d[0].slice(4)), RGB[1] = i(d[1]), RGB[2]=i(d[2]), RGB[3] = d[3] ? parseFloat(d[3]) : -1;
             } else {
-                if( l === 8 || l === 6 || l < 4 )return null; //ErrorCheck
-                if( l < 6 )d = "#" + d[1] + d[1] + d[2] + d[2] + d[3] + d[3] + ( l > 4 ? d[4] + "" + d[4] : "" ); //3 digit
-                d = i( d.slice( 1 ), 16 ), RGB[0] = d >> 16 & 255, RGB[1] = d >> 8 & 255, RGB[2] = d & 255, RGB[3] = l === 9 || l === 5 ? r( ( (d >> 24 & 255 ) / 255 ) * 10000 ) / 10000 :-1;
+                if(l === 8 || l === 6 || l < 4)return null; //ErrorCheck
+                if(l < 6)d = "#" + d[1] + d[1] + d[2] + d[2] + d[3] + d[3] + (l > 4 ? d[4] + "" + d[4] : ""); //3 digit
+                d = i(d.slice(1), 16), RGB[0] = d >> 16 & 255, RGB[1] = d >> 8 & 255, RGB[2] = d & 255, RGB[3] = l === 9 || l === 5 ? r(((d >> 24 & 255) / 255) * 10000) / 10000 :-1;
             }
             return RGB;
         };
@@ -161,76 +162,9 @@
             to = to && to !== "c" ? to : b ? "#000000" : "#FFFFFF",
             f = sbcRip(from),
             t = sbcRip(to);
-        if( !f || !t )return null; //ErrorCheck
-        if( h )return "rgb(" + r( ( t[0] - f[0]) * p + f[0] ) + ", " + r( ( t[1] - f[1] ) * p + f[1] ) + "," + r( ( t[2] - f[2] ) * p + f[2] ) + ( f[3] < 0 && t[3] < 0 ? ")" : ", " + ( f[3] > -1 && t[3] > -1 ? r( ( ( t[3] - f[3] ) * p + f[3] ) * 10000 )/10000 : t[3] < 0 ? f[3] : t[3]) + ")" );
-        else return "#" + ( 0x100000000 + ( f[3] > -1 && t[3] > -1 ? r( ( ( t[3] - f[3] ) * p + f[3] ) * 255 ) : t[3] > -1 ? r( t[3] * 255 ) : f[3] > -1 ? r( f[3] * 255 ) : 255 ) * 0x1000000 + r( ( t[0] - f[0] ) * p + f[0] ) * 0x10000 + r( ( t[1] - f[1] ) * p + f[1] ) * 0x100 + r( ( t[2] - f[2] ) * p + f[2] ) ).toString(16).slice( f[3] > -1 || t[3] > -1 ? 1 : 3 );
-    }
-
-    function ot_visualization(){
-        // Detect compatabilty
-        var ContextClass = (window.AudioContext || window.webkitAudioContext || window.mozAudioContext);
-        
-        //for analyser node
-        var analyser;
-        
-        //set empty array hald of fft size or equal to frequencybincount (you could put frequency bin count here if created)
-        var frequencyData = new Uint8Array(1024);
-
-        if (ContextClass) {
-            // Web Audio API is available.
-            var audioContext = new ContextClass();
-
-            // load audio file from html tag
-            var audioElement = document.getElementById('ot-noise');
-            
-            // creating source node
-            var source = audioContext.createMediaElementSource(audioElement);
-
-            // creating source node
-            analyser = audioContext.createAnalyser();
-            
-            // set size of how many bits we analyse on
-            analyser.fftSize = 2048;
-
-            // connect to the source
-            source.connect(analyser);
-            analyser.connect(audioContext.destination);
-        } else {
-            // Web Audio API is not available - bail, or improvise a fallback
-            console.log("Browser does not support the Web Audio API :(");
-        }
-
-        function update() {
-            requestAnimationFrame(update);
-            analyser.getByteFrequencyData(frequencyData);
-
-            var lights = $('li'),
-                tint = $('.is-active').data('tint'),
-                totalLights = lights.length;
-
-            for (var i=0; i < totalLights; i++) {
-                //set light colours
-                //var lightColour = i*10;
-                //lights[i].style.boxShadow = '10px 10px 2px hsla('+lightColour+',  80%, 50%, 0.8)';
-                
-                var freqDataKey = i*6;
-                    
-                if ( takeover !== true ) { // move this condition outside the loop
-                    // clear the audio animations
-                    return;
-                } else {
-                    // launch the audio animations
-                    if (frequencyData[freqDataKey] > 160 || frequencyData[freqDataKey] < 80 ){
-                        lights[i].style.backgroundImage = 'linear-gradient(to right, ' + shadeBlendConvert(0.3, tint) + ' 0%, ' + shadeBlendConvert(-0.6, tint) + ' 100%)';
-                    }
-                    else {
-                        lights[i].style.backgroundImage = 'linear-gradient(to right, ' + shadeBlendConvert(0.6, tint) + ' 0%, ' + shadeBlendConvert(0.3, tint) + ' 50%)';
-                    }
-                }
-            }
-        }
-
-        update();
+        if(!f || !t)return null; //ErrorCheck
+        if(h)return "rgb(" + r(( t[0] - f[0]) * p + f[0]) + ", " + r((t[1] - f[1]) * p + f[1]) + "," + r((t[2] - f[2]) * p + f[2]) + (f[3] < 0 && t[3] < 0 ? ")" : ", " + (f[3] > -1 && t[3] > -1 ? r(((t[3] - f[3]) * p + f[3]) * 10000)/10000 : t[3] < 0 ? f[3] : t[3]) + ")");
+        else return "#" + (0x100000000 + ( f[3] > -1 && t[3] > -1 ? r(((t[3] - f[3]) * p + f[3]) * 255) : t[3] > -1 ? r(t[3] * 255) : f[3] > -1 ? r(f[3] * 255) : 255) * 0x1000000 + r((t[0] - f[0]) * p + f[0]) * 0x10000 + r((t[1] - f[1]) * p + f[1]) * 0x100 + r((t[2] - f[2]) * p + f[2])).toString(16).slice(f[3] > -1 || t[3] > -1 ? 1 : 3);
     }
     
     function ot_launch_takeOver() {
@@ -242,8 +176,8 @@
         // Set up the variables
         var audio = $("#ot-noise"),
             audioSrc = $(this).data('mp3'),
-            //tint = $(this).data('tint'),
-            //tintedBg = $('.content'),
+            tint = $(this).data('tint'),
+            tintedBg = $('body'),
             artist = $(this).data('tooltip'),
             str = artist.replace(/\s+/g, '-').toLowerCase(),
             //path = "M0, 200a200, 200 0 1, 0 400, 0a200, 200 0 1, 0 -400, 0";
@@ -264,8 +198,9 @@
             $(this).addClass('is-active').attr('disabled', true);
             
             // Set up the accent colour
+            // http://jsfiddle.net/KxEKd/1/
             //tintedBg.css({'background-color': tint, 'background-image': 'linear-gradient(45deg, ' + shadeBlendConvert(0.3, tint) + ' 25%, transparent 25%, transparent 75%, ' + shadeBlendConvert(0.3, tint) + ' 75%, ' + shadeBlendConvert(0.3, tint) + '), linear-gradient(45deg, ' + shadeBlendConvert(0.3, tint) + ' 25%, transparent 25%, transparent 75%, ' + shadeBlendConvert(0.3, tint) + ' 75%, ' + shadeBlendConvert(0.3, tint) + ')', 'background-size': '30px 30px', 'background-position': '0 0, 15px 15px' });
-                        
+            
             // Clear any previous body class then add the current artist name
             $('body').removeClass().addClass(str);
 
@@ -301,7 +236,7 @@
       });
     }
     
-    // Preload the background images
+    // Loop through the background images so we can preload them
     function ot_bg_preloader() {
         var images = [];
         for (var i = 0; i < arguments.length; i++) {
@@ -314,6 +249,5 @@
         ot_button_markUp();
         ot_expand_menu();
         ot_launch_takeOver();
-        //ot_visualization();
     });
 })( jQuery );

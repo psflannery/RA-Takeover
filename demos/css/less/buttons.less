@@ -1,150 +1,94 @@
 //
 // Buttons
+// See: http://hugogiraudel.com/2013/04/02/items-on-circle/
+// See: http://dabblet.com/gist/3864650
 // --------------------------------------------------
 
 .ot-btn-container {
-	text-align: center;
+    text-align: center;
     position: fixed;
-    right: @launch-btn-gutter-width;
+    left: @launch-btn-gutter-width;
     bottom: @launch-btn-gutter-width;
     z-index: @zindex-launch-button;
 }
 .ot-btn-main-menu {
-	position: relative;
-	display: inline-block;
-	-webkit-touch-callout: none;
+    position: relative;
+    display: inline-block;
+    -webkit-touch-callout: none;
     .user-select(none);
-	cursor: pointer;
-    &.menu--open {
-        .ot-btn-menu-items {
-            li {
-                &:first-child {
-                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position*8, 0);
-                }
-                &:nth-child(2) {
-                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position*7, 0);
-                }
-                &:nth-child(3) {
-                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position*6, 0);
-                }
-                &:nth-child(4) {
-                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position*5, 0);
-                }
-                &:nth-child(5) {
-                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position*4, 0);
-                }
-                &:nth-child(6) {
-                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position*3, 0);
-                }
-                &:nth-child(7) {
-                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position*2, 0);
-                }
-                &:nth-child(8) {
-                    transform: scale3d(1, 1, 1) translate3d(0px, -@avatar-position, 0);
-                }
-                &:nth-child(9) {
-                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position, 0px, 0);
-                }
-                &:nth-child(10) {
-                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*2, 0px, 0);
-                }
-                &:nth-child(11) {
-                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*3, 0px, 0);
-                }
-                &:nth-child(12) {
-                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*4, 0px, 0);
-                }
-                &:nth-child(13) {
-                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*5, 0px, 0);
-                }
-                &:nth-child(14) {
-                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*6, 0px, 0);
-                }
-                &:nth-child(15) {
-                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*7, 0px, 0);
-                }
-                &:nth-child(16) {
-                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*8, 0px, 0);
-                }
-                &:nth-child(17) {
-                    transform: scale3d(1, 1, 1) translate3d(-@avatar-position*9, 0px, 0);
-                }
-            }
-            .is-active {
-                .transition(box-shadow .3s ease);
-                box-shadow: 0 0 2px 2px red, 0 0 4px 4px yellow, 0 0 6px 6px blue, 0 0 8px 8px violet;
-            }
-        }      
-    }
+    cursor: pointer;
 }
 .ot-menu-trigger {
-	background: none;
-	.square(100px);
-	padding: 0;
-	margin: 0;
-	border: none;
-	outline: none;
-	text-align: center;
-	color: @launch-btn-text-color;
-	position: relative;
-	z-index: @zindex-launch-btn;
-	-webkit-tap-highlight-color: rgba(0,0,0,0);
-	-webkit-tap-highlight-color: transparent; /* For some Androids */
+    background: none;
+    .square(100px);
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: @launch-btn-text-color;
+    position: relative;
+    z-index: @zindex-launch-btn;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent; // For some Androids
 }
 .ot-btn-menu-items {
-	position: absolute;
-	.square(100%);
-	top: 0;
-	padding: 0;
-	margin: 0;
-	list-style-type: none;
-	//z-index: 5;
-    @media (max-width: @screen-sm-max) {
-        .scale3d(0.8; 0.8; 1);
+    position: absolute;
+    .square(100%);
+    top: 0;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    @media (max-width: @screen-md-max) {
+        .scale(0.8);
+    }
+    .menu--open & {
+        //.distribute-on-circle( 17, -180, 90vw, @avatar-size );
+        .distribute-on-circle( 17, -180, 85vw, @avatar-size );
+        .is-active {
+            .transition(box-shadow .3s ease);
+            box-shadow: 0 0 2px 2px red, 0 0 4px 4px yellow, 0 0 6px 6px blue, 0 0 8px 8px violet;
+        }
     }
     li {
-        .square(@avatar-size);
-        top: 10%;
-        left: 15%;
-        position: absolute;
+        transform: scale(0.5) rotate(-0deg) translate(-90vw);
         z-index: @zindex-behind;
-        .transform-origin(50% 50%);
-        .scale3d(0.5, 0.5, 1);
-        .transition(0.25s ease-out);
+        //.transform-origin(50% 50%);
+        .transform-origin(bottom);
+        .transition(all 0.5s ease-out);
         button {
             display: block;
-            border-radius: 50%;
-            box-shadow: 0 1px 10px fade(#000000, 15%);
+            //box-shadow: 0 1px 10px fade(#000000, 15%);
             outline: none;
-            -webkit-tap-highlight-color: rgba(0,0,0,0);
-            -webkit-tap-highlight-color: transparent; /* For some Androids */
             padding: 0;
             border: 0;
+            border-radius: 50%;
             text-align: center;
             vertical-align: middle;
             touch-action: manipulation;
             cursor: pointer;
             background-image: none;
+            .square(@avatar-size);
             white-space: nowrap;
-            &:hover, &:focus {
-                //background: #272c2c;
-                //color: #777
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+            -webkit-tap-highlight-color: transparent; // For some Androids
+            .menu--open & {
+                box-shadow: 0 0 20px 4px fade(#000000, 40%), 0 0 60px 20px white;
             }
         }
     }
     img {
         vertical-align: bottom;
-        max-width: 100%;
-        height: auto;
-        border-radius: 50%;
+        .square(@avatar-size);
+        border-radius: 50%
     }
 }
 .ot-morph-shape {
-	position: absolute;
-	.square(100%);
-	top: 0;
-	left: 0;
-	z-index: @zindex-launch-btn;
+    position: absolute;
+    .square(100%);
+    top: 0;
+    left: 0;
+    z-index: @zindex-launch-btn;
     svg {
         fill: @launch-btn-fill-color;
         .transition(fill 0.3s); 

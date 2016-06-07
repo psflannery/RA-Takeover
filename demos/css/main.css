@@ -6,7 +6,7 @@
 .ot-btn-container {
   text-align: center;
   position: fixed;
-  right: 15px;
+  left: 15px;
   bottom: 15px;
   z-index: 1010;
 }
@@ -19,79 +19,6 @@
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:first-child {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(0px, -640px, 0);
-          transform: scale3d(1, 1, 1) translate3d(0px, -640px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(2) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(0px, -560px, 0);
-          transform: scale3d(1, 1, 1) translate3d(0px, -560px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(3) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(0px, -480px, 0);
-          transform: scale3d(1, 1, 1) translate3d(0px, -480px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(4) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(0px, -400px, 0);
-          transform: scale3d(1, 1, 1) translate3d(0px, -400px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(5) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(0px, -320px, 0);
-          transform: scale3d(1, 1, 1) translate3d(0px, -320px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(6) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(0px, -240px, 0);
-          transform: scale3d(1, 1, 1) translate3d(0px, -240px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(7) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(0px, -160px, 0);
-          transform: scale3d(1, 1, 1) translate3d(0px, -160px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(8) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(0px, -80px, 0);
-          transform: scale3d(1, 1, 1) translate3d(0px, -80px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(9) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(-80px, 0px, 0);
-          transform: scale3d(1, 1, 1) translate3d(-80px, 0px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(10) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(-160px, 0px, 0);
-          transform: scale3d(1, 1, 1) translate3d(-160px, 0px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(11) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(-240px, 0px, 0);
-          transform: scale3d(1, 1, 1) translate3d(-240px, 0px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(12) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(-320px, 0px, 0);
-          transform: scale3d(1, 1, 1) translate3d(-320px, 0px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(13) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(-400px, 0px, 0);
-          transform: scale3d(1, 1, 1) translate3d(-400px, 0px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(14) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(-480px, 0px, 0);
-          transform: scale3d(1, 1, 1) translate3d(-480px, 0px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(15) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(-560px, 0px, 0);
-          transform: scale3d(1, 1, 1) translate3d(-560px, 0px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(16) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(-640px, 0px, 0);
-          transform: scale3d(1, 1, 1) translate3d(-640px, 0px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items li:nth-child(17) {
-  -webkit-transform: scale3d(1, 1, 1) translate3d(-720px, 0px, 0);
-          transform: scale3d(1, 1, 1) translate3d(-720px, 0px, 0);
-}
-.ot-btn-main-menu.menu--open .ot-btn-menu-items .is-active {
-  -webkit-transition: box-shadow 0.3s ease;
-  transition: box-shadow 0.3s ease;
-  box-shadow: 0 0 2px 2px red, 0 0 4px 4px yellow, 0 0 6px 6px blue, 0 0 8px 8px violet;
 }
 .ot-menu-trigger {
   background: none;
@@ -107,7 +34,6 @@
   z-index: 100;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
-  /* For some Androids */
 }
 .ot-btn-menu-items {
   position: absolute;
@@ -118,48 +44,130 @@
   margin: 0;
   list-style-type: none;
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .ot-btn-menu-items {
-    -webkit-transform: scale3d(0.8, 0.8, 1);
-    transform: scale3d(0.8, 0.8, 1);
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
   }
 }
-.ot-btn-menu-items li {
+.menu--open .ot-btn-menu-items {
+  padding: 0;
+}
+.menu--open .ot-btn-menu-items li {
+  display: block;
+  position: absolute;
+  left: calc(42.5vw + 30px);
+  left: -o-calc(42.5vw + 30px);
   width: 60px;
   height: 60px;
-  top: 10%;
-  left: 15%;
-  position: absolute;
+}
+.menu--open .ot-btn-menu-items li:nth-child(17) {
+  -webkit-transform: scale(1) rotate(0deg) translate(42.5vw) rotate(0deg);
+          transform: scale(1) rotate(0deg) translate(42.5vw) rotate(0deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(16) {
+  -webkit-transform: scale(1) rotate(-10.58823529deg) translate(42.5vw) rotate(10.58823529deg);
+          transform: scale(1) rotate(-10.58823529deg) translate(42.5vw) rotate(10.58823529deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(15) {
+  -webkit-transform: scale(1) rotate(-21.17647059deg) translate(42.5vw) rotate(21.17647059deg);
+          transform: scale(1) rotate(-21.17647059deg) translate(42.5vw) rotate(21.17647059deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(14) {
+  -webkit-transform: scale(1) rotate(-31.76470588deg) translate(42.5vw) rotate(31.76470588deg);
+          transform: scale(1) rotate(-31.76470588deg) translate(42.5vw) rotate(31.76470588deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(13) {
+  -webkit-transform: scale(1) rotate(-42.35294118deg) translate(42.5vw) rotate(42.35294118deg);
+          transform: scale(1) rotate(-42.35294118deg) translate(42.5vw) rotate(42.35294118deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(12) {
+  -webkit-transform: scale(1) rotate(-52.94117647deg) translate(42.5vw) rotate(52.94117647deg);
+          transform: scale(1) rotate(-52.94117647deg) translate(42.5vw) rotate(52.94117647deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(11) {
+  -webkit-transform: scale(1) rotate(-63.52941176deg) translate(42.5vw) rotate(63.52941176deg);
+          transform: scale(1) rotate(-63.52941176deg) translate(42.5vw) rotate(63.52941176deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(10) {
+  -webkit-transform: scale(1) rotate(-74.11764706deg) translate(42.5vw) rotate(74.11764706deg);
+          transform: scale(1) rotate(-74.11764706deg) translate(42.5vw) rotate(74.11764706deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(9) {
+  -webkit-transform: scale(1) rotate(-84.70588235deg) translate(42.5vw) rotate(84.70588235deg);
+          transform: scale(1) rotate(-84.70588235deg) translate(42.5vw) rotate(84.70588235deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(8) {
+  -webkit-transform: scale(1) rotate(-95.29411765deg) translate(42.5vw) rotate(95.29411765deg);
+          transform: scale(1) rotate(-95.29411765deg) translate(42.5vw) rotate(95.29411765deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(7) {
+  -webkit-transform: scale(1) rotate(-105.88235294deg) translate(42.5vw) rotate(105.88235294deg);
+          transform: scale(1) rotate(-105.88235294deg) translate(42.5vw) rotate(105.88235294deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(6) {
+  -webkit-transform: scale(1) rotate(-116.47058824deg) translate(42.5vw) rotate(116.47058824deg);
+          transform: scale(1) rotate(-116.47058824deg) translate(42.5vw) rotate(116.47058824deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(5) {
+  -webkit-transform: scale(1) rotate(-127.05882353deg) translate(42.5vw) rotate(127.05882353deg);
+          transform: scale(1) rotate(-127.05882353deg) translate(42.5vw) rotate(127.05882353deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(4) {
+  -webkit-transform: scale(1) rotate(-137.64705882deg) translate(42.5vw) rotate(137.64705882deg);
+          transform: scale(1) rotate(-137.64705882deg) translate(42.5vw) rotate(137.64705882deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(3) {
+  -webkit-transform: scale(1) rotate(-148.23529412deg) translate(42.5vw) rotate(148.23529412deg);
+          transform: scale(1) rotate(-148.23529412deg) translate(42.5vw) rotate(148.23529412deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(2) {
+  -webkit-transform: scale(1) rotate(-158.82352941deg) translate(42.5vw) rotate(158.82352941deg);
+          transform: scale(1) rotate(-158.82352941deg) translate(42.5vw) rotate(158.82352941deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(1) {
+  -webkit-transform: scale(1) rotate(-169.41176471deg) translate(42.5vw) rotate(169.41176471deg);
+          transform: scale(1) rotate(-169.41176471deg) translate(42.5vw) rotate(169.41176471deg);
+}
+.menu--open .ot-btn-menu-items .is-active {
+  -webkit-transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 0 2px 2px red, 0 0 4px 4px yellow, 0 0 6px 6px blue, 0 0 8px 8px violet;
+}
+.ot-btn-menu-items li {
+  -webkit-transform: scale(0.5) rotate(0deg) translate(-90vw);
+          transform: scale(0.5) rotate(0deg) translate(-90vw);
   z-index: -1;
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-transform: scale3d(0.5, 0.5, 1);
-  transform: scale3d(0.5, 0.5, 1);
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
+  -webkit-transform-origin: bottom;
+  transform-origin: bottom;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
 .ot-btn-menu-items li button {
   display: block;
-  border-radius: 50%;
-  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
   outline: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  -webkit-tap-highlight-color: transparent;
-  /* For some Androids */
   padding: 0;
   border: 0;
+  border-radius: 50%;
   text-align: center;
   vertical-align: middle;
   -ms-touch-action: manipulation;
       touch-action: manipulation;
   cursor: pointer;
   background-image: none;
+  width: 60px;
+  height: 60px;
   white-space: nowrap;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+.menu--open .ot-btn-menu-items li button {
+  box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.4), 0 0 60px 20px white;
 }
 .ot-btn-menu-items img {
   vertical-align: bottom;
-  max-width: 100%;
-  height: auto;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
 }
 .ot-morph-shape {
@@ -194,10 +202,12 @@
 [data-tooltip]:before {
   content: attr(data-tooltip);
   background: #fff;
-  border: 2px solid #000;
   border-radius: 0px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
   color: #000;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
   letter-spacing: 1px;
   padding: .5em 1em;
   white-space: nowrap;

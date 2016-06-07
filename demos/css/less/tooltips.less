@@ -14,10 +14,13 @@
     &:before {
         content: attr(data-tooltip);
         background: @tooltip-background-color;
-        border: 2px solid @tooltip-border-color;
+        //border: 2px solid @tooltip-border-color;
         border-radius: (@tooltip-border-radius);
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
         color: @tooltip-text-color;
         font-size: @tooltip-font-size;
+        font-weight: bold;
+        text-transform: uppercase;
         letter-spacing: 1px;
         padding: .5em 1em;
         white-space: nowrap;

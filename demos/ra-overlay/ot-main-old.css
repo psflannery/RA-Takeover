@@ -2,7 +2,6 @@ a {
 	color: #B24E51;
 	text-decoration: none;
 }
-
 a:hover,
 a:focus {
 	color: #afb3b8;
@@ -10,7 +9,6 @@ a:focus {
 }
 .ot-btn-container {
 	text-align: center;
-	/*padding: 5.25em 0.5em 0;*/
     position: fixed;
     right: 10px;
     bottom: 0;
@@ -26,9 +24,7 @@ a:focus {
 	-ms-user-select: none;
 	user-select: none;
 	cursor: pointer;
-	/*margin: 7em 0;*/
 }
-
 .ot-menu-trigger {
 	background: none;
 	width: 100px;
@@ -38,19 +34,12 @@ a:focus {
 	border: none;
 	outline: none;
 	text-align: center;
-	/*font-size: 1.5em;*/
 	color: #fff;
 	position: relative;
 	z-index: 1000;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-tap-highlight-color: transparent; /* For some Androids */
 }
-/*
-.ot-menu-trigger span {
-	opacity: 0;
-	position: absolute;
-}
-*/
 .ot-btn-menu-items {
 	position: absolute;
 	width: 100%;
@@ -61,7 +50,6 @@ a:focus {
 	list-style-type: none;
 	z-index: 5;
 }
-
 .ot-btn-menu-items li {
 	width: 60px;
 	height: 60px;
@@ -145,7 +133,7 @@ a:focus {
     transform: scale3d(1, 1, 1) translate3d(-720px, 0px, 0);
 }
 
-.ot-btn-menu-items li a {
+.ot-btn-menu-items li button {
 	display: block;
 	background: #2E3535;
 	color: #DA7071;
@@ -156,6 +144,19 @@ a:focus {
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	-webkit-tap-highlight-color: transparent; /* For some Androids */
     /*transform: rotate(90deg);*/
+    padding: 0;
+    border: 0;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    white-space: nowrap;
+}
+.ot-btn-menu-items li button:hover,
+.ot-btn-menu-items li button:focus {
+	background: #272c2c;
+	color: #777;
 }
 /*
 .ot-btn-main-menu.menu--open .ot-btn-menu-items li a {
@@ -170,13 +171,6 @@ a:focus {
     border-radius: 50%;
     padding: 1px;
 }
-
-.ot-btn-menu-items li a:hover,
-.ot-btn-menu-items li a:focus {
-	background: #272c2c;
-	color: #777;
-}
-
 .ot-morph-shape {
 	position: absolute;
 	width: 100%;
@@ -232,20 +226,45 @@ a:focus {
   border: 0;    
 }
 
-/* Takeover 
-.ot-takeover {
-    background: url('img/watson.jpg') center center fixed;
-    background-size: cover;
-}
+/* Takeover */
 .ot-takeover > div {
-    background: url('img/watson.jpg') center center;
-    background-size: cover;
     background-blend-mode: multiply;
     -webkit-transform: skew(15deg, 15deg);
     -moz-transform: skew(15deg, 15deg);
     -ms-transform: skew(15deg, 15deg);
     -o-transform: skew(15deg, 15deg);
     transform: skew(15deg, 15deg);
+}
+.rhys-coren .ot-takeover {
+    background: url('../../assets/rhys-button.jpg') center center fixed;
+    background-size: cover;
+}
+.rhys-coren .ot-takeover > div {
+    background: url('../../assets/rhys-bg.gif') center center;
+}
+.gery-georgieva .ot-takeover {
+    background: url('../../assets/gery-bg.jpg') center center fixed;
+    background-size: cover;
+}
+.gery-georgieva .ot-takeover > div {
+    background: url('../../assets/gery-bg.jpg') center center;
+    background-color: transparent !important;
+}
+.anna-hughes .ot-takeover {
+    background: url('../../assets/anna-h-bg.jpg') center center fixed;
+    background-size: cover;
+}
+.anna-hughes .ot-takeover > div {
+    background: url('../../assets/anna-h-button.jpg') center center;
+    background-color: transparent !important;
+}
+.wanda-wieser .ot-takeover {
+    background: url('../../assets/wanda-bg.jpg') center center fixed;
+    background-size: cover;
+}
+.wanda-wieser .ot-takeover > div {
+    background: url('../../assets/wanda-button.jpg') center center;
+    background-color: transparent !important;
 }
 .ot-takeover div:nth-child(even) {
     background-color: red;
@@ -271,7 +290,7 @@ a:focus {
     -o-transform: rotate(-45deg) skew(15deg, 15deg);
     transform: rotate(-45deg) skew(15deg, 15deg);
 }
-*/
+
 /* Keyframes -- clockwise */
 @-webkit-keyframes clockwise {
     from { 
