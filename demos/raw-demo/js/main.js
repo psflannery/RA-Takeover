@@ -23,14 +23,7 @@
                            '<nav class="ot-btn-main-menu">' +
                              '<span class="ot-morph-shape" data-morph-active="' + paths.active + '">' +
                                '<svg id="ot-launch" width="100%" height="100%" viewBox="0 0 300 300" preserveAspectRatio="none">' +
-                                '<defs>' +
-                                    '<filter id="dropshadow" width="200%" height="200%">' +
-                                        '<feOffset dx="0" dy="0" result="offsetblur" in="SourceGraphic"/>' +
-                                        '<feGaussianBlur result="blurOut" in="offOut" stdDeviation="5"/>' +
-                                        '<feBlend in="SourceGraphic" in2="blurOut" mode="normal" />' +
-                                    '</filter>' +
-                                '</defs>' +
-                                '<path d="' + paths.rest + '" filter="url(#dropshadow)"/>' +
+                                '<path d="' + paths.rest + '" />' +
                                '</svg>' +
                              '</span>' +
                              '<button type="button" class="ot-menu-trigger" data-toggle="ot-menu" data-text-swap="Stop!" aria-controls="student-list" aria-expanded="false">' +

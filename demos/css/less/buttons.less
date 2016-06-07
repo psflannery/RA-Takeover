@@ -43,7 +43,6 @@
         .scale(0.8);
     }
     .menu--open & {
-        //.distribute-on-circle( 17, -180, 90vw, @avatar-size );
         .distribute-on-circle( 17, -180, 85vw, @avatar-size );
         .is-active {
             .transition(box-shadow .3s ease);
@@ -52,8 +51,8 @@
     }
     li {
         transform: scale(0.5) rotate(-0deg) translate(-90vw);
+        //transform: scale(1) rotate(0deg) translate(0vw) rotate(0deg);
         z-index: @zindex-behind;
-        //.transform-origin(50% 50%);
         .transform-origin(bottom);
         .transition(all 0.5s ease-out);
         button {
