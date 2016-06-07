@@ -119,7 +119,7 @@
                 }
 
                 // Convert the SVG text back to html
-                $('.converted-to-svg textpath').each(function(i){
+                $('.converted-to-svg text').each(function(i){
                     var originalClass = $('#converted-' + (i+1)).data('class');
                     $(this).parents('svg').replaceWith($('<h1 class="' + originalClass + '">' + $( this ).text() + '</h1>'));
                 });
