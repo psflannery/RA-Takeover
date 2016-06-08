@@ -39,22 +39,30 @@
     padding: 0;
     margin: 0;
     list-style-type: none;
-    @media (max-width: @screen-md-max) {
+    @media (max-width: @screen-xs-max) {
         .scale(0.8);
     }
     .menu--open & {
-        .distribute-on-circle( 17, -180, 85vw, @avatar-size );
+        @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+            .distribute-on-circle( 17, -360, 80vw, @avatar-size );
+            position: fixed;
+            top: 50%;
+        }
+        @media (min-width: @screen-md-min) {
+            .distribute-on-circle( 17, -180, 85vw, @avatar-size );
+        }
         .is-active {
             .transition(box-shadow .3s ease);
             box-shadow: 0 0 2px 2px red, 0 0 4px 4px yellow, 0 0 6px 6px blue, 0 0 8px 8px violet;
         }
     }
     li {
-        transform: scale(0.5) rotate(-0deg) translate(-90vw);
-        //transform: scale(1) rotate(0deg) translate(0vw) rotate(0deg);
+        //transform: scale(0.5) rotate(-0deg) translate(-90vw);
+        transform: scale(1) rotate(0deg) translate(0vw) rotate(0deg);
         z-index: @zindex-behind;
         .transform-origin(bottom);
         .transition(all 0.5s ease-out);
+        .square(@avatar-size);
         button {
             display: block;
             //box-shadow: 0 1px 10px fade(#000000, 15%);
@@ -67,7 +75,7 @@
             touch-action: manipulation;
             cursor: pointer;
             background-image: none;
-            .square(@avatar-size);
+            //.square(@avatar-size);
             white-space: nowrap;
             -webkit-tap-highlight-color: rgba(0,0,0,0);
             -webkit-tap-highlight-color: transparent; // For some Androids
@@ -78,7 +86,9 @@
     }
     img {
         vertical-align: bottom;
-        .square(@avatar-size);
+        //.square(@avatar-size);
+        width: 100%;
+        height: auto;
         border-radius: 50%
     }
 }

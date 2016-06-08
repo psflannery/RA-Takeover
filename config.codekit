@@ -101,15 +101,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/demos\/css\/css\/mixins\/circular.css": {
-		"fileType": 16,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/demos\/css\/css\/mixins\/circular.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/demos\/css\/less\/backgrounds.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
