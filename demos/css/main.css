@@ -3,6 +3,18 @@
  * Opening Times
  * Paul Flannery, Rhys Coren
  */
+/*
+.menu--open .ot-btn-menu-items li
+    display: block;
+    position: absolute;
+    // left: calc(30px + 40vh);
+    //left: -o-calc(30px + 40vh);
+    width: 40px;
+    height: 40px;
+    bottom: calc(30px + 40vh);
+    left: 30px;
+}
+*/
 .ot-btn-container {
   text-align: center;
   position: fixed;
@@ -22,8 +34,8 @@
 }
 .ot-menu-trigger {
   background: none;
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   padding: 0;
   margin: 0;
   border: none;
@@ -34,6 +46,12 @@
   z-index: 100;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+}
+@media (min-width: 768px) {
+  .ot-menu-trigger {
+    width: 100px;
+    height: 100px;
+  }
 }
 .ot-btn-menu-items {
   position: absolute;
@@ -50,6 +68,90 @@
     transform: scale(0.8);
   }
 }
+@media (max-width: 767px) {
+  .menu--open .ot-btn-menu-items {
+    padding: 0;
+  }
+  .menu--open .ot-btn-menu-items li {
+    display: block;
+    position: absolute;
+    bottom: calc(15px +  45vh);
+    bottom: -o-calc(15px +  45vh);
+    left: 75px;
+    width: 41.37931034px;
+    height: 41.37931034px;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(17) {
+    -webkit-transform: scale(1) rotate(90deg) translate(45vh) rotate(-90deg);
+            transform: scale(1) rotate(90deg) translate(45vh) rotate(-90deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(16) {
+    -webkit-transform: scale(1) rotate(79.41176471deg) translate(45vh) rotate(-79.41176471deg);
+            transform: scale(1) rotate(79.41176471deg) translate(45vh) rotate(-79.41176471deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(15) {
+    -webkit-transform: scale(1) rotate(68.82352941deg) translate(45vh) rotate(-68.82352941deg);
+            transform: scale(1) rotate(68.82352941deg) translate(45vh) rotate(-68.82352941deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(14) {
+    -webkit-transform: scale(1) rotate(58.23529412deg) translate(45vh) rotate(-58.23529412deg);
+            transform: scale(1) rotate(58.23529412deg) translate(45vh) rotate(-58.23529412deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(13) {
+    -webkit-transform: scale(1) rotate(47.64705882deg) translate(45vh) rotate(-47.64705882deg);
+            transform: scale(1) rotate(47.64705882deg) translate(45vh) rotate(-47.64705882deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(12) {
+    -webkit-transform: scale(1) rotate(37.05882353deg) translate(45vh) rotate(-37.05882353deg);
+            transform: scale(1) rotate(37.05882353deg) translate(45vh) rotate(-37.05882353deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(11) {
+    -webkit-transform: scale(1) rotate(26.47058824deg) translate(45vh) rotate(-26.47058824deg);
+            transform: scale(1) rotate(26.47058824deg) translate(45vh) rotate(-26.47058824deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(10) {
+    -webkit-transform: scale(1) rotate(15.88235294deg) translate(45vh) rotate(-15.88235294deg);
+            transform: scale(1) rotate(15.88235294deg) translate(45vh) rotate(-15.88235294deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(9) {
+    -webkit-transform: scale(1) rotate(5.29411765deg) translate(45vh) rotate(-5.29411765deg);
+            transform: scale(1) rotate(5.29411765deg) translate(45vh) rotate(-5.29411765deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(8) {
+    -webkit-transform: scale(1) rotate(-5.29411765deg) translate(45vh) rotate(5.29411765deg);
+            transform: scale(1) rotate(-5.29411765deg) translate(45vh) rotate(5.29411765deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(7) {
+    -webkit-transform: scale(1) rotate(-15.88235294deg) translate(45vh) rotate(15.88235294deg);
+            transform: scale(1) rotate(-15.88235294deg) translate(45vh) rotate(15.88235294deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(6) {
+    -webkit-transform: scale(1) rotate(-26.47058824deg) translate(45vh) rotate(26.47058824deg);
+            transform: scale(1) rotate(-26.47058824deg) translate(45vh) rotate(26.47058824deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(5) {
+    -webkit-transform: scale(1) rotate(-37.05882353deg) translate(45vh) rotate(37.05882353deg);
+            transform: scale(1) rotate(-37.05882353deg) translate(45vh) rotate(37.05882353deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(4) {
+    -webkit-transform: scale(1) rotate(-47.64705882deg) translate(45vh) rotate(47.64705882deg);
+            transform: scale(1) rotate(-47.64705882deg) translate(45vh) rotate(47.64705882deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(3) {
+    -webkit-transform: scale(1) rotate(-58.23529412deg) translate(45vh) rotate(58.23529412deg);
+            transform: scale(1) rotate(-58.23529412deg) translate(45vh) rotate(58.23529412deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(2) {
+    -webkit-transform: scale(1) rotate(-68.82352941deg) translate(45vh) rotate(68.82352941deg);
+            transform: scale(1) rotate(-68.82352941deg) translate(45vh) rotate(68.82352941deg);
+  }
+  .menu--open .ot-btn-menu-items li:nth-child(1) {
+    -webkit-transform: scale(1) rotate(-79.41176471deg) translate(45vh) rotate(79.41176471deg);
+            transform: scale(1) rotate(-79.41176471deg) translate(45vh) rotate(79.41176471deg);
+  }
+}
 @media (min-width: 768px) and (max-width: 991px) {
   .menu--open .ot-btn-menu-items {
     padding: 0;
@@ -63,6 +165,8 @@
     left: -o-calc(30px +  40vw);
     width: 60px;
     height: 60px;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
   }
   .menu--open .ot-btn-menu-items li:nth-child(17) {
     -webkit-transform: scale(1) rotate(0deg) translate(40vw) rotate(0deg);
@@ -144,6 +248,8 @@
     left: -o-calc(30px +  42.5vw);
     width: 60px;
     height: 60px;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
   }
   .menu--open .ot-btn-menu-items li:nth-child(17) {
     -webkit-transform: scale(1) rotate(0deg) translate(42.5vw) rotate(0deg);
@@ -220,13 +326,12 @@
   box-shadow: 0 0 2px 2px red, 0 0 4px 4px yellow, 0 0 6px 6px blue, 0 0 8px 8px violet;
 }
 .ot-btn-menu-items li {
-  -webkit-transform: scale(1) rotate(0deg) translate(0vw) rotate(0deg);
-          transform: scale(1) rotate(0deg) translate(0vw) rotate(0deg);
+  -webkit-transform: scale(0.5) rotate(0deg) translate(0vw) rotate(0deg);
+          transform: scale(0.5) rotate(0deg) translate(0vw) rotate(0deg);
+  position: absolute;
   z-index: -1;
   -webkit-transform-origin: bottom;
   transform-origin: bottom;
-  -webkit-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
   width: 60px;
   height: 60px;
 }

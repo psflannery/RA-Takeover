@@ -20,7 +20,7 @@
 }
 .ot-menu-trigger {
     background: none;
-    .square(100px);
+    .square(@launch-btn-size * 0.6);
     padding: 0;
     margin: 0;
     border: none;
@@ -31,6 +31,9 @@
     z-index: @zindex-launch-btn;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-tap-highlight-color: transparent; // For some Androids
+    @media (min-width: @screen-sm-min) {
+        .square(@launch-btn-size);
+    }
 }
 .ot-btn-menu-items {
     position: absolute;
@@ -43,6 +46,9 @@
         .scale(0.8);
     }
     .menu--open & {
+        @media (max-width: @screen-xs-max) {
+            .distribute-on-circle-phone( 17, -180, 90vh, (@avatar-size / 1.45) );
+        }
         @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
             .distribute-on-circle( 17, -360, 80vw, @avatar-size );
             position: fixed;
@@ -58,10 +64,11 @@
     }
     li {
         //transform: scale(0.5) rotate(-0deg) translate(-90vw);
-        transform: scale(1) rotate(0deg) translate(0vw) rotate(0deg);
+        transform: scale(0.5) rotate(0deg) translate(0vw) rotate(0deg);
+        position: absolute;
         z-index: @zindex-behind;
         .transform-origin(bottom);
-        .transition(all 0.5s ease-out);
+        //.transition(all 0.5s ease-out);
         .square(@avatar-size);
         button {
             display: block;
