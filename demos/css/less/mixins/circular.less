@@ -2,10 +2,11 @@
 //
 // @param {Integer} @nb-items - Number or items
 // @param {Integer} @degrees - Number or degrees over which to distribute
+// @param {Integer} @rotation - Beginig position of circle
 // @param {Length} @circle-size - Container size
 // @param {Length} @item-size - Item size
 
-.distribute-on-circle( @nb-items, @degrees, @circle-size, @item-size ) {
+.distribute-on-circle( @nb-items, @degrees, @rotation, @circle-size, @item-size ) {
     @half-item: (@item-size / 2);
     @half-parent: (@circle-size / 2);
 
@@ -16,14 +17,18 @@
         .calc(left; ~"30px + " @half-parent);
         .square(@item-size);
         .transition(all 0.5s ease-out);
+        @media (max-width: @screen-xs-max) {
+            .calc(bottom; ~"15px + " @half-parent);
+            left: 75px;
+        }
     }
  
     @angle: (@degrees / @nb-items);
-    @rot: 0;
+    @rot: @rotation;
     
     .loop (@i, @rot) when (@i > 0) {
         li:nth-child(@{i}) {
-            //transition-delay: (-@rot * .01s);
+            transition-delay: (-@rot * .01s);
             transform: scale(1) rotate(@rot * 1deg) translate(@half-parent) rotate(@rot * -1deg);
         }
         .loop((@i - 1), (@rot + @angle));
@@ -31,44 +36,3 @@
     
     .loop(@nb-items, @rot);
 }
-
-.distribute-on-circle-phone( @nb-items, @degrees, @circle-size, @item-size ) {
-    @half-item: (@item-size / 2);
-    @half-parent: (@circle-size / 2);
-
-    padding: 0;
-    li {
-        display: block;
-        position: absolute;
-        .calc(bottom; ~"15px + " @half-parent);
-        left: 75px;
-        .square(@item-size);
-        .transition(all 0.5s ease-out);
-    }
- 
-    @angle: (@degrees / @nb-items);
-    @rot: 90;
-    
-    .loop (@i, @rot) when (@i > 0) {
-        li:nth-child(@{i}) {
-            //transition-delay: (-@rot * .01s);
-            transform: scale(1) rotate(@rot * 1deg) translate(@half-parent) rotate(@rot * -1deg);
-        }
-        .loop((@i - 1), (@rot + @angle));
-    }
-    
-    .loop(@nb-items, @rot);
-}
-
-/*
-.menu--open .ot-btn-menu-items li
-    display: block;
-    position: absolute;
-    // left: calc(30px + 40vh);
-    //left: -o-calc(30px + 40vh);
-    width: 40px;
-    height: 40px;
-    bottom: calc(30px + 40vh);
-    left: 30px;
-}
-*/

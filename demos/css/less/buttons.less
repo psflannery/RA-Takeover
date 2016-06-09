@@ -46,16 +46,19 @@
         .scale(0.8);
     }
     .menu--open & {
-        @media (max-width: @screen-xs-max) {
-            .distribute-on-circle-phone( 17, -180, 90vh, (@avatar-size / 1.45) );
-        }
+        // @param {Integer} @nb-items - Number or items
+        // @param {Integer} @degrees - Number or degrees over which to distribute
+        // @param {Integer} @rotation - Beginig position of circle
+        // @param {Length} @circle-size - Container size
+        // @param {Length} @item-size - Item size
+        .distribute-on-circle( 17, -180, 90, 90vh, @avatar-size / 1.45 );
         @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
-            .distribute-on-circle( 17, -360, 80vw, @avatar-size );
+            .distribute-on-circle( 17, -360, 0, 80vw, @avatar-size );
             position: fixed;
             top: 50%;
         }
         @media (min-width: @screen-md-min) {
-            .distribute-on-circle( 17, -180, 85vw, @avatar-size );
+            .distribute-on-circle( 17, -180, 0, 85vw, @avatar-size );
         }
         .is-active {
             .transition(box-shadow .3s ease);

@@ -3,18 +3,6 @@
  * Opening Times
  * Paul Flannery, Rhys Coren
  */
-/*
-.menu--open .ot-btn-menu-items li
-    display: block;
-    position: absolute;
-    // left: calc(30px + 40vh);
-    //left: -o-calc(30px + 40vh);
-    width: 40px;
-    height: 40px;
-    bottom: calc(30px + 40vh);
-    left: 30px;
-}
-*/
 .ot-btn-container {
   text-align: center;
   position: fixed;
@@ -68,89 +56,127 @@
     transform: scale(0.8);
   }
 }
+.menu--open .ot-btn-menu-items {
+  padding: 0;
+}
+.menu--open .ot-btn-menu-items li {
+  display: block;
+  position: absolute;
+  left: calc(30px +  45vh);
+  left: -o-calc(30px +  45vh);
+  width: 41.37931034px;
+  height: 41.37931034px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
 @media (max-width: 767px) {
-  .menu--open .ot-btn-menu-items {
-    padding: 0;
-  }
   .menu--open .ot-btn-menu-items li {
-    display: block;
-    position: absolute;
     bottom: calc(15px +  45vh);
     bottom: -o-calc(15px +  45vh);
     left: 75px;
-    width: 41.37931034px;
-    height: 41.37931034px;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
   }
-  .menu--open .ot-btn-menu-items li:nth-child(17) {
-    -webkit-transform: scale(1) rotate(90deg) translate(45vh) rotate(-90deg);
-            transform: scale(1) rotate(90deg) translate(45vh) rotate(-90deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(16) {
-    -webkit-transform: scale(1) rotate(79.41176471deg) translate(45vh) rotate(-79.41176471deg);
-            transform: scale(1) rotate(79.41176471deg) translate(45vh) rotate(-79.41176471deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(15) {
-    -webkit-transform: scale(1) rotate(68.82352941deg) translate(45vh) rotate(-68.82352941deg);
-            transform: scale(1) rotate(68.82352941deg) translate(45vh) rotate(-68.82352941deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(14) {
-    -webkit-transform: scale(1) rotate(58.23529412deg) translate(45vh) rotate(-58.23529412deg);
-            transform: scale(1) rotate(58.23529412deg) translate(45vh) rotate(-58.23529412deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(13) {
-    -webkit-transform: scale(1) rotate(47.64705882deg) translate(45vh) rotate(-47.64705882deg);
-            transform: scale(1) rotate(47.64705882deg) translate(45vh) rotate(-47.64705882deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(12) {
-    -webkit-transform: scale(1) rotate(37.05882353deg) translate(45vh) rotate(-37.05882353deg);
-            transform: scale(1) rotate(37.05882353deg) translate(45vh) rotate(-37.05882353deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(11) {
-    -webkit-transform: scale(1) rotate(26.47058824deg) translate(45vh) rotate(-26.47058824deg);
-            transform: scale(1) rotate(26.47058824deg) translate(45vh) rotate(-26.47058824deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(10) {
-    -webkit-transform: scale(1) rotate(15.88235294deg) translate(45vh) rotate(-15.88235294deg);
-            transform: scale(1) rotate(15.88235294deg) translate(45vh) rotate(-15.88235294deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(9) {
-    -webkit-transform: scale(1) rotate(5.29411765deg) translate(45vh) rotate(-5.29411765deg);
-            transform: scale(1) rotate(5.29411765deg) translate(45vh) rotate(-5.29411765deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(8) {
-    -webkit-transform: scale(1) rotate(-5.29411765deg) translate(45vh) rotate(5.29411765deg);
-            transform: scale(1) rotate(-5.29411765deg) translate(45vh) rotate(5.29411765deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(7) {
-    -webkit-transform: scale(1) rotate(-15.88235294deg) translate(45vh) rotate(15.88235294deg);
-            transform: scale(1) rotate(-15.88235294deg) translate(45vh) rotate(15.88235294deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(6) {
-    -webkit-transform: scale(1) rotate(-26.47058824deg) translate(45vh) rotate(26.47058824deg);
-            transform: scale(1) rotate(-26.47058824deg) translate(45vh) rotate(26.47058824deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(5) {
-    -webkit-transform: scale(1) rotate(-37.05882353deg) translate(45vh) rotate(37.05882353deg);
-            transform: scale(1) rotate(-37.05882353deg) translate(45vh) rotate(37.05882353deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(4) {
-    -webkit-transform: scale(1) rotate(-47.64705882deg) translate(45vh) rotate(47.64705882deg);
-            transform: scale(1) rotate(-47.64705882deg) translate(45vh) rotate(47.64705882deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(3) {
-    -webkit-transform: scale(1) rotate(-58.23529412deg) translate(45vh) rotate(58.23529412deg);
-            transform: scale(1) rotate(-58.23529412deg) translate(45vh) rotate(58.23529412deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(2) {
-    -webkit-transform: scale(1) rotate(-68.82352941deg) translate(45vh) rotate(68.82352941deg);
-            transform: scale(1) rotate(-68.82352941deg) translate(45vh) rotate(68.82352941deg);
-  }
-  .menu--open .ot-btn-menu-items li:nth-child(1) {
-    -webkit-transform: scale(1) rotate(-79.41176471deg) translate(45vh) rotate(79.41176471deg);
-            transform: scale(1) rotate(-79.41176471deg) translate(45vh) rotate(79.41176471deg);
-  }
+}
+.menu--open .ot-btn-menu-items li:nth-child(17) {
+  -webkit-transition-delay: -0.9s;
+          transition-delay: -0.9s;
+  -webkit-transform: scale(1) rotate(90deg) translate(45vh) rotate(-90deg);
+          transform: scale(1) rotate(90deg) translate(45vh) rotate(-90deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(16) {
+  -webkit-transition-delay: -0.79411765s;
+          transition-delay: -0.79411765s;
+  -webkit-transform: scale(1) rotate(79.41176471deg) translate(45vh) rotate(-79.41176471deg);
+          transform: scale(1) rotate(79.41176471deg) translate(45vh) rotate(-79.41176471deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(15) {
+  -webkit-transition-delay: -0.68823529s;
+          transition-delay: -0.68823529s;
+  -webkit-transform: scale(1) rotate(68.82352941deg) translate(45vh) rotate(-68.82352941deg);
+          transform: scale(1) rotate(68.82352941deg) translate(45vh) rotate(-68.82352941deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(14) {
+  -webkit-transition-delay: -0.58235294s;
+          transition-delay: -0.58235294s;
+  -webkit-transform: scale(1) rotate(58.23529412deg) translate(45vh) rotate(-58.23529412deg);
+          transform: scale(1) rotate(58.23529412deg) translate(45vh) rotate(-58.23529412deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(13) {
+  -webkit-transition-delay: -0.47647059s;
+          transition-delay: -0.47647059s;
+  -webkit-transform: scale(1) rotate(47.64705882deg) translate(45vh) rotate(-47.64705882deg);
+          transform: scale(1) rotate(47.64705882deg) translate(45vh) rotate(-47.64705882deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(12) {
+  -webkit-transition-delay: -0.37058824s;
+          transition-delay: -0.37058824s;
+  -webkit-transform: scale(1) rotate(37.05882353deg) translate(45vh) rotate(-37.05882353deg);
+          transform: scale(1) rotate(37.05882353deg) translate(45vh) rotate(-37.05882353deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(11) {
+  -webkit-transition-delay: -0.26470588s;
+          transition-delay: -0.26470588s;
+  -webkit-transform: scale(1) rotate(26.47058824deg) translate(45vh) rotate(-26.47058824deg);
+          transform: scale(1) rotate(26.47058824deg) translate(45vh) rotate(-26.47058824deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(10) {
+  -webkit-transition-delay: -0.15882353s;
+          transition-delay: -0.15882353s;
+  -webkit-transform: scale(1) rotate(15.88235294deg) translate(45vh) rotate(-15.88235294deg);
+          transform: scale(1) rotate(15.88235294deg) translate(45vh) rotate(-15.88235294deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(9) {
+  -webkit-transition-delay: -0.05294118s;
+          transition-delay: -0.05294118s;
+  -webkit-transform: scale(1) rotate(5.29411765deg) translate(45vh) rotate(-5.29411765deg);
+          transform: scale(1) rotate(5.29411765deg) translate(45vh) rotate(-5.29411765deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(8) {
+  -webkit-transition-delay: 0.05294118s;
+          transition-delay: 0.05294118s;
+  -webkit-transform: scale(1) rotate(-5.29411765deg) translate(45vh) rotate(5.29411765deg);
+          transform: scale(1) rotate(-5.29411765deg) translate(45vh) rotate(5.29411765deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(7) {
+  -webkit-transition-delay: 0.15882353s;
+          transition-delay: 0.15882353s;
+  -webkit-transform: scale(1) rotate(-15.88235294deg) translate(45vh) rotate(15.88235294deg);
+          transform: scale(1) rotate(-15.88235294deg) translate(45vh) rotate(15.88235294deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(6) {
+  -webkit-transition-delay: 0.26470588s;
+          transition-delay: 0.26470588s;
+  -webkit-transform: scale(1) rotate(-26.47058824deg) translate(45vh) rotate(26.47058824deg);
+          transform: scale(1) rotate(-26.47058824deg) translate(45vh) rotate(26.47058824deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(5) {
+  -webkit-transition-delay: 0.37058824s;
+          transition-delay: 0.37058824s;
+  -webkit-transform: scale(1) rotate(-37.05882353deg) translate(45vh) rotate(37.05882353deg);
+          transform: scale(1) rotate(-37.05882353deg) translate(45vh) rotate(37.05882353deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(4) {
+  -webkit-transition-delay: 0.47647059s;
+          transition-delay: 0.47647059s;
+  -webkit-transform: scale(1) rotate(-47.64705882deg) translate(45vh) rotate(47.64705882deg);
+          transform: scale(1) rotate(-47.64705882deg) translate(45vh) rotate(47.64705882deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(3) {
+  -webkit-transition-delay: 0.58235294s;
+          transition-delay: 0.58235294s;
+  -webkit-transform: scale(1) rotate(-58.23529412deg) translate(45vh) rotate(58.23529412deg);
+          transform: scale(1) rotate(-58.23529412deg) translate(45vh) rotate(58.23529412deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(2) {
+  -webkit-transition-delay: 0.68823529s;
+          transition-delay: 0.68823529s;
+  -webkit-transform: scale(1) rotate(-68.82352941deg) translate(45vh) rotate(68.82352941deg);
+          transform: scale(1) rotate(-68.82352941deg) translate(45vh) rotate(68.82352941deg);
+}
+.menu--open .ot-btn-menu-items li:nth-child(1) {
+  -webkit-transition-delay: 0.79411765s;
+          transition-delay: 0.79411765s;
+  -webkit-transform: scale(1) rotate(-79.41176471deg) translate(45vh) rotate(79.41176471deg);
+          transform: scale(1) rotate(-79.41176471deg) translate(45vh) rotate(79.41176471deg);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .menu--open .ot-btn-menu-items {
@@ -169,72 +195,113 @@
     transition: all 0.5s ease-out;
   }
   .menu--open .ot-btn-menu-items li:nth-child(17) {
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
     -webkit-transform: scale(1) rotate(0deg) translate(40vw) rotate(0deg);
             transform: scale(1) rotate(0deg) translate(40vw) rotate(0deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(16) {
+    -webkit-transition-delay: 0.21176471s;
+            transition-delay: 0.21176471s;
     -webkit-transform: scale(1) rotate(-21.17647059deg) translate(40vw) rotate(21.17647059deg);
             transform: scale(1) rotate(-21.17647059deg) translate(40vw) rotate(21.17647059deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(15) {
+    -webkit-transition-delay: 0.42352941s;
+            transition-delay: 0.42352941s;
     -webkit-transform: scale(1) rotate(-42.35294118deg) translate(40vw) rotate(42.35294118deg);
             transform: scale(1) rotate(-42.35294118deg) translate(40vw) rotate(42.35294118deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(14) {
+    -webkit-transition-delay: 0.63529412s;
+            transition-delay: 0.63529412s;
     -webkit-transform: scale(1) rotate(-63.52941176deg) translate(40vw) rotate(63.52941176deg);
             transform: scale(1) rotate(-63.52941176deg) translate(40vw) rotate(63.52941176deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(13) {
+    -webkit-transition-delay: 0.84705882s;
+            transition-delay: 0.84705882s;
     -webkit-transform: scale(1) rotate(-84.70588235deg) translate(40vw) rotate(84.70588235deg);
             transform: scale(1) rotate(-84.70588235deg) translate(40vw) rotate(84.70588235deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(12) {
+    -webkit-transition-delay: 1.05882353s;
+            transition-delay: 1.05882353s;
     -webkit-transform: scale(1) rotate(-105.88235294deg) translate(40vw) rotate(105.88235294deg);
             transform: scale(1) rotate(-105.88235294deg) translate(40vw) rotate(105.88235294deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(11) {
+    -webkit-transition-delay: 1.27058824s;
+            transition-delay: 1.27058824s;
     -webkit-transform: scale(1) rotate(-127.05882353deg) translate(40vw) rotate(127.05882353deg);
             transform: scale(1) rotate(-127.05882353deg) translate(40vw) rotate(127.05882353deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(10) {
+    -webkit-transition-delay: 1.48235294s;
+            transition-delay: 1.48235294s;
     -webkit-transform: scale(1) rotate(-148.23529412deg) translate(40vw) rotate(148.23529412deg);
             transform: scale(1) rotate(-148.23529412deg) translate(40vw) rotate(148.23529412deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(9) {
+    -webkit-transition-delay: 1.69411765s;
+            transition-delay: 1.69411765s;
     -webkit-transform: scale(1) rotate(-169.41176471deg) translate(40vw) rotate(169.41176471deg);
             transform: scale(1) rotate(-169.41176471deg) translate(40vw) rotate(169.41176471deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(8) {
+    -webkit-transition-delay: 1.90588235s;
+            transition-delay: 1.90588235s;
     -webkit-transform: scale(1) rotate(-190.58823529deg) translate(40vw) rotate(190.58823529deg);
             transform: scale(1) rotate(-190.58823529deg) translate(40vw) rotate(190.58823529deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(7) {
+    -webkit-transition-delay: 2.11764706s;
+            transition-delay: 2.11764706s;
     -webkit-transform: scale(1) rotate(-211.76470588deg) translate(40vw) rotate(211.76470588deg);
             transform: scale(1) rotate(-211.76470588deg) translate(40vw) rotate(211.76470588deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(6) {
+    -webkit-transition-delay: 2.32941176s;
+            transition-delay: 2.32941176s;
     -webkit-transform: scale(1) rotate(-232.94117647deg) translate(40vw) rotate(232.94117647deg);
             transform: scale(1) rotate(-232.94117647deg) translate(40vw) rotate(232.94117647deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(5) {
+    -webkit-transition-delay: 2.54117647s;
+            transition-delay: 2.54117647s;
     -webkit-transform: scale(1) rotate(-254.11764706deg) translate(40vw) rotate(254.11764706deg);
             transform: scale(1) rotate(-254.11764706deg) translate(40vw) rotate(254.11764706deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(4) {
+    -webkit-transition-delay: 2.75294118s;
+            transition-delay: 2.75294118s;
     -webkit-transform: scale(1) rotate(-275.29411765deg) translate(40vw) rotate(275.29411765deg);
             transform: scale(1) rotate(-275.29411765deg) translate(40vw) rotate(275.29411765deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(3) {
+    -webkit-transition-delay: 2.96470588s;
+            transition-delay: 2.96470588s;
     -webkit-transform: scale(1) rotate(-296.47058824deg) translate(40vw) rotate(296.47058824deg);
             transform: scale(1) rotate(-296.47058824deg) translate(40vw) rotate(296.47058824deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(2) {
+    -webkit-transition-delay: 3.17647059s;
+            transition-delay: 3.17647059s;
     -webkit-transform: scale(1) rotate(-317.64705882deg) translate(40vw) rotate(317.64705882deg);
             transform: scale(1) rotate(-317.64705882deg) translate(40vw) rotate(317.64705882deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(1) {
+    -webkit-transition-delay: 3.38823529s;
+            transition-delay: 3.38823529s;
     -webkit-transform: scale(1) rotate(-338.82352941deg) translate(40vw) rotate(338.82352941deg);
             transform: scale(1) rotate(-338.82352941deg) translate(40vw) rotate(338.82352941deg);
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) and (max-width: 767px) {
+  .menu--open .ot-btn-menu-items li {
+    bottom: calc(15px +  40vw);
+    bottom: -o-calc(15px +  40vw);
+    left: 75px;
   }
 }
 @media (min-width: 992px) {
@@ -252,72 +319,113 @@
     transition: all 0.5s ease-out;
   }
   .menu--open .ot-btn-menu-items li:nth-child(17) {
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
     -webkit-transform: scale(1) rotate(0deg) translate(42.5vw) rotate(0deg);
             transform: scale(1) rotate(0deg) translate(42.5vw) rotate(0deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(16) {
+    -webkit-transition-delay: 0.10588235s;
+            transition-delay: 0.10588235s;
     -webkit-transform: scale(1) rotate(-10.58823529deg) translate(42.5vw) rotate(10.58823529deg);
             transform: scale(1) rotate(-10.58823529deg) translate(42.5vw) rotate(10.58823529deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(15) {
+    -webkit-transition-delay: 0.21176471s;
+            transition-delay: 0.21176471s;
     -webkit-transform: scale(1) rotate(-21.17647059deg) translate(42.5vw) rotate(21.17647059deg);
             transform: scale(1) rotate(-21.17647059deg) translate(42.5vw) rotate(21.17647059deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(14) {
+    -webkit-transition-delay: 0.31764706s;
+            transition-delay: 0.31764706s;
     -webkit-transform: scale(1) rotate(-31.76470588deg) translate(42.5vw) rotate(31.76470588deg);
             transform: scale(1) rotate(-31.76470588deg) translate(42.5vw) rotate(31.76470588deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(13) {
+    -webkit-transition-delay: 0.42352941s;
+            transition-delay: 0.42352941s;
     -webkit-transform: scale(1) rotate(-42.35294118deg) translate(42.5vw) rotate(42.35294118deg);
             transform: scale(1) rotate(-42.35294118deg) translate(42.5vw) rotate(42.35294118deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(12) {
+    -webkit-transition-delay: 0.52941176s;
+            transition-delay: 0.52941176s;
     -webkit-transform: scale(1) rotate(-52.94117647deg) translate(42.5vw) rotate(52.94117647deg);
             transform: scale(1) rotate(-52.94117647deg) translate(42.5vw) rotate(52.94117647deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(11) {
+    -webkit-transition-delay: 0.63529412s;
+            transition-delay: 0.63529412s;
     -webkit-transform: scale(1) rotate(-63.52941176deg) translate(42.5vw) rotate(63.52941176deg);
             transform: scale(1) rotate(-63.52941176deg) translate(42.5vw) rotate(63.52941176deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(10) {
+    -webkit-transition-delay: 0.74117647s;
+            transition-delay: 0.74117647s;
     -webkit-transform: scale(1) rotate(-74.11764706deg) translate(42.5vw) rotate(74.11764706deg);
             transform: scale(1) rotate(-74.11764706deg) translate(42.5vw) rotate(74.11764706deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(9) {
+    -webkit-transition-delay: 0.84705882s;
+            transition-delay: 0.84705882s;
     -webkit-transform: scale(1) rotate(-84.70588235deg) translate(42.5vw) rotate(84.70588235deg);
             transform: scale(1) rotate(-84.70588235deg) translate(42.5vw) rotate(84.70588235deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(8) {
+    -webkit-transition-delay: 0.95294118s;
+            transition-delay: 0.95294118s;
     -webkit-transform: scale(1) rotate(-95.29411765deg) translate(42.5vw) rotate(95.29411765deg);
             transform: scale(1) rotate(-95.29411765deg) translate(42.5vw) rotate(95.29411765deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(7) {
+    -webkit-transition-delay: 1.05882353s;
+            transition-delay: 1.05882353s;
     -webkit-transform: scale(1) rotate(-105.88235294deg) translate(42.5vw) rotate(105.88235294deg);
             transform: scale(1) rotate(-105.88235294deg) translate(42.5vw) rotate(105.88235294deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(6) {
+    -webkit-transition-delay: 1.16470588s;
+            transition-delay: 1.16470588s;
     -webkit-transform: scale(1) rotate(-116.47058824deg) translate(42.5vw) rotate(116.47058824deg);
             transform: scale(1) rotate(-116.47058824deg) translate(42.5vw) rotate(116.47058824deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(5) {
+    -webkit-transition-delay: 1.27058824s;
+            transition-delay: 1.27058824s;
     -webkit-transform: scale(1) rotate(-127.05882353deg) translate(42.5vw) rotate(127.05882353deg);
             transform: scale(1) rotate(-127.05882353deg) translate(42.5vw) rotate(127.05882353deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(4) {
+    -webkit-transition-delay: 1.37647059s;
+            transition-delay: 1.37647059s;
     -webkit-transform: scale(1) rotate(-137.64705882deg) translate(42.5vw) rotate(137.64705882deg);
             transform: scale(1) rotate(-137.64705882deg) translate(42.5vw) rotate(137.64705882deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(3) {
+    -webkit-transition-delay: 1.48235294s;
+            transition-delay: 1.48235294s;
     -webkit-transform: scale(1) rotate(-148.23529412deg) translate(42.5vw) rotate(148.23529412deg);
             transform: scale(1) rotate(-148.23529412deg) translate(42.5vw) rotate(148.23529412deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(2) {
+    -webkit-transition-delay: 1.58823529s;
+            transition-delay: 1.58823529s;
     -webkit-transform: scale(1) rotate(-158.82352941deg) translate(42.5vw) rotate(158.82352941deg);
             transform: scale(1) rotate(-158.82352941deg) translate(42.5vw) rotate(158.82352941deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(1) {
+    -webkit-transition-delay: 1.69411765s;
+            transition-delay: 1.69411765s;
     -webkit-transform: scale(1) rotate(-169.41176471deg) translate(42.5vw) rotate(169.41176471deg);
             transform: scale(1) rotate(-169.41176471deg) translate(42.5vw) rotate(169.41176471deg);
+  }
+}
+@media (min-width: 992px) and (max-width: 767px) {
+  .menu--open .ot-btn-menu-items li {
+    bottom: calc(15px +  42.5vw);
+    bottom: -o-calc(15px +  42.5vw);
+    left: 75px;
   }
 }
 .menu--open .ot-btn-menu-items .is-active {
