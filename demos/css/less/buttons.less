@@ -25,6 +25,7 @@
     margin: 0;
     border: none;
     outline: none;
+    cursor: pointer;
     text-align: center;
     color: @launch-btn-text-color;
     position: relative;
@@ -49,9 +50,9 @@
         // @param {Integer} @nb-items - Number or items
         // @param {Integer} @degrees - Number or degrees over which to distribute
         // @param {Integer} @rotation - Beginig position of circle
-        // @param {Length} @circle-size - Container size
-        // @param {Length} @item-size - Item size
-        .distribute-on-circle( 17, -180, 90, 90vh, @avatar-size / 1.45 );
+        // @param {Length}  @circle-size - Container size
+        // @param {Length}  @item-size - Item size
+        .distribute-on-circle( 17, -180, -270, 90vh, @avatar-size / 1.45 );
         @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
             .distribute-on-circle( 17, -360, 0, 80vw, @avatar-size );
             position: fixed;
@@ -66,12 +67,10 @@
         }
     }
     li {
-        //transform: scale(0.5) rotate(-0deg) translate(-90vw);
         transform: scale(0.5) rotate(0deg) translate(0vw) rotate(0deg);
         position: absolute;
         z-index: @zindex-behind;
         .transform-origin(bottom);
-        //.transition(all 0.5s ease-out);
         .square(@avatar-size);
         button {
             display: block;
@@ -85,18 +84,16 @@
             touch-action: manipulation;
             cursor: pointer;
             background-image: none;
-            //.square(@avatar-size);
             white-space: nowrap;
             -webkit-tap-highlight-color: rgba(0,0,0,0);
             -webkit-tap-highlight-color: transparent; // For some Androids
             .menu--open & {
-                box-shadow: 0 0 20px 4px fade(#000000, 40%), 0 0 60px 20px white;
+                box-shadow: 0px 1px 20px 1px fade(#000000, 40%), 0 0 60px 20px white;
             }
         }
     }
     img {
         vertical-align: bottom;
-        //.square(@avatar-size);
         width: 100%;
         height: auto;
         border-radius: 50%

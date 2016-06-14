@@ -28,6 +28,7 @@
   margin: 0;
   border: none;
   outline: none;
+  cursor: pointer;
   text-align: center;
   color: #fff;
   position: relative;
@@ -77,106 +78,72 @@
   }
 }
 .menu--open .ot-btn-menu-items li:nth-child(17) {
-  -webkit-transition-delay: -0.9s;
-          transition-delay: -0.9s;
-  -webkit-transform: scale(1) rotate(90deg) translate(45vh) rotate(-90deg);
-          transform: scale(1) rotate(90deg) translate(45vh) rotate(-90deg);
+  -webkit-transform: scale(1) rotate(-270deg) translate(45vh) rotate(270deg);
+          transform: scale(1) rotate(-270deg) translate(45vh) rotate(270deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(16) {
-  -webkit-transition-delay: -0.79411765s;
-          transition-delay: -0.79411765s;
-  -webkit-transform: scale(1) rotate(79.41176471deg) translate(45vh) rotate(-79.41176471deg);
-          transform: scale(1) rotate(79.41176471deg) translate(45vh) rotate(-79.41176471deg);
+  -webkit-transform: scale(1) rotate(-280.58823529deg) translate(45vh) rotate(280.58823529deg);
+          transform: scale(1) rotate(-280.58823529deg) translate(45vh) rotate(280.58823529deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(15) {
-  -webkit-transition-delay: -0.68823529s;
-          transition-delay: -0.68823529s;
-  -webkit-transform: scale(1) rotate(68.82352941deg) translate(45vh) rotate(-68.82352941deg);
-          transform: scale(1) rotate(68.82352941deg) translate(45vh) rotate(-68.82352941deg);
+  -webkit-transform: scale(1) rotate(-291.17647059deg) translate(45vh) rotate(291.17647059deg);
+          transform: scale(1) rotate(-291.17647059deg) translate(45vh) rotate(291.17647059deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(14) {
-  -webkit-transition-delay: -0.58235294s;
-          transition-delay: -0.58235294s;
-  -webkit-transform: scale(1) rotate(58.23529412deg) translate(45vh) rotate(-58.23529412deg);
-          transform: scale(1) rotate(58.23529412deg) translate(45vh) rotate(-58.23529412deg);
+  -webkit-transform: scale(1) rotate(-301.76470588deg) translate(45vh) rotate(301.76470588deg);
+          transform: scale(1) rotate(-301.76470588deg) translate(45vh) rotate(301.76470588deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(13) {
-  -webkit-transition-delay: -0.47647059s;
-          transition-delay: -0.47647059s;
-  -webkit-transform: scale(1) rotate(47.64705882deg) translate(45vh) rotate(-47.64705882deg);
-          transform: scale(1) rotate(47.64705882deg) translate(45vh) rotate(-47.64705882deg);
+  -webkit-transform: scale(1) rotate(-312.35294118deg) translate(45vh) rotate(312.35294118deg);
+          transform: scale(1) rotate(-312.35294118deg) translate(45vh) rotate(312.35294118deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(12) {
-  -webkit-transition-delay: -0.37058824s;
-          transition-delay: -0.37058824s;
-  -webkit-transform: scale(1) rotate(37.05882353deg) translate(45vh) rotate(-37.05882353deg);
-          transform: scale(1) rotate(37.05882353deg) translate(45vh) rotate(-37.05882353deg);
+  -webkit-transform: scale(1) rotate(-322.94117647deg) translate(45vh) rotate(322.94117647deg);
+          transform: scale(1) rotate(-322.94117647deg) translate(45vh) rotate(322.94117647deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(11) {
-  -webkit-transition-delay: -0.26470588s;
-          transition-delay: -0.26470588s;
-  -webkit-transform: scale(1) rotate(26.47058824deg) translate(45vh) rotate(-26.47058824deg);
-          transform: scale(1) rotate(26.47058824deg) translate(45vh) rotate(-26.47058824deg);
+  -webkit-transform: scale(1) rotate(-333.52941176deg) translate(45vh) rotate(333.52941176deg);
+          transform: scale(1) rotate(-333.52941176deg) translate(45vh) rotate(333.52941176deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(10) {
-  -webkit-transition-delay: -0.15882353s;
-          transition-delay: -0.15882353s;
-  -webkit-transform: scale(1) rotate(15.88235294deg) translate(45vh) rotate(-15.88235294deg);
-          transform: scale(1) rotate(15.88235294deg) translate(45vh) rotate(-15.88235294deg);
+  -webkit-transform: scale(1) rotate(-344.11764706deg) translate(45vh) rotate(344.11764706deg);
+          transform: scale(1) rotate(-344.11764706deg) translate(45vh) rotate(344.11764706deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(9) {
-  -webkit-transition-delay: -0.05294118s;
-          transition-delay: -0.05294118s;
-  -webkit-transform: scale(1) rotate(5.29411765deg) translate(45vh) rotate(-5.29411765deg);
-          transform: scale(1) rotate(5.29411765deg) translate(45vh) rotate(-5.29411765deg);
+  -webkit-transform: scale(1) rotate(-354.70588235deg) translate(45vh) rotate(354.70588235deg);
+          transform: scale(1) rotate(-354.70588235deg) translate(45vh) rotate(354.70588235deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(8) {
-  -webkit-transition-delay: 0.05294118s;
-          transition-delay: 0.05294118s;
-  -webkit-transform: scale(1) rotate(-5.29411765deg) translate(45vh) rotate(5.29411765deg);
-          transform: scale(1) rotate(-5.29411765deg) translate(45vh) rotate(5.29411765deg);
+  -webkit-transform: scale(1) rotate(-365.29411765deg) translate(45vh) rotate(365.29411765deg);
+          transform: scale(1) rotate(-365.29411765deg) translate(45vh) rotate(365.29411765deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(7) {
-  -webkit-transition-delay: 0.15882353s;
-          transition-delay: 0.15882353s;
-  -webkit-transform: scale(1) rotate(-15.88235294deg) translate(45vh) rotate(15.88235294deg);
-          transform: scale(1) rotate(-15.88235294deg) translate(45vh) rotate(15.88235294deg);
+  -webkit-transform: scale(1) rotate(-375.88235294deg) translate(45vh) rotate(375.88235294deg);
+          transform: scale(1) rotate(-375.88235294deg) translate(45vh) rotate(375.88235294deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(6) {
-  -webkit-transition-delay: 0.26470588s;
-          transition-delay: 0.26470588s;
-  -webkit-transform: scale(1) rotate(-26.47058824deg) translate(45vh) rotate(26.47058824deg);
-          transform: scale(1) rotate(-26.47058824deg) translate(45vh) rotate(26.47058824deg);
+  -webkit-transform: scale(1) rotate(-386.47058824deg) translate(45vh) rotate(386.47058824deg);
+          transform: scale(1) rotate(-386.47058824deg) translate(45vh) rotate(386.47058824deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(5) {
-  -webkit-transition-delay: 0.37058824s;
-          transition-delay: 0.37058824s;
-  -webkit-transform: scale(1) rotate(-37.05882353deg) translate(45vh) rotate(37.05882353deg);
-          transform: scale(1) rotate(-37.05882353deg) translate(45vh) rotate(37.05882353deg);
+  -webkit-transform: scale(1) rotate(-397.05882353deg) translate(45vh) rotate(397.05882353deg);
+          transform: scale(1) rotate(-397.05882353deg) translate(45vh) rotate(397.05882353deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(4) {
-  -webkit-transition-delay: 0.47647059s;
-          transition-delay: 0.47647059s;
-  -webkit-transform: scale(1) rotate(-47.64705882deg) translate(45vh) rotate(47.64705882deg);
-          transform: scale(1) rotate(-47.64705882deg) translate(45vh) rotate(47.64705882deg);
+  -webkit-transform: scale(1) rotate(-407.64705882deg) translate(45vh) rotate(407.64705882deg);
+          transform: scale(1) rotate(-407.64705882deg) translate(45vh) rotate(407.64705882deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(3) {
-  -webkit-transition-delay: 0.58235294s;
-          transition-delay: 0.58235294s;
-  -webkit-transform: scale(1) rotate(-58.23529412deg) translate(45vh) rotate(58.23529412deg);
-          transform: scale(1) rotate(-58.23529412deg) translate(45vh) rotate(58.23529412deg);
+  -webkit-transform: scale(1) rotate(-418.23529412deg) translate(45vh) rotate(418.23529412deg);
+          transform: scale(1) rotate(-418.23529412deg) translate(45vh) rotate(418.23529412deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(2) {
-  -webkit-transition-delay: 0.68823529s;
-          transition-delay: 0.68823529s;
-  -webkit-transform: scale(1) rotate(-68.82352941deg) translate(45vh) rotate(68.82352941deg);
-          transform: scale(1) rotate(-68.82352941deg) translate(45vh) rotate(68.82352941deg);
+  -webkit-transform: scale(1) rotate(-428.82352941deg) translate(45vh) rotate(428.82352941deg);
+          transform: scale(1) rotate(-428.82352941deg) translate(45vh) rotate(428.82352941deg);
 }
 .menu--open .ot-btn-menu-items li:nth-child(1) {
-  -webkit-transition-delay: 0.79411765s;
-          transition-delay: 0.79411765s;
-  -webkit-transform: scale(1) rotate(-79.41176471deg) translate(45vh) rotate(79.41176471deg);
-          transform: scale(1) rotate(-79.41176471deg) translate(45vh) rotate(79.41176471deg);
+  -webkit-transform: scale(1) rotate(-439.41176471deg) translate(45vh) rotate(439.41176471deg);
+          transform: scale(1) rotate(-439.41176471deg) translate(45vh) rotate(439.41176471deg);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .menu--open .ot-btn-menu-items {
@@ -195,104 +162,70 @@
     transition: all 0.5s ease-out;
   }
   .menu--open .ot-btn-menu-items li:nth-child(17) {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
     -webkit-transform: scale(1) rotate(0deg) translate(40vw) rotate(0deg);
             transform: scale(1) rotate(0deg) translate(40vw) rotate(0deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(16) {
-    -webkit-transition-delay: 0.21176471s;
-            transition-delay: 0.21176471s;
     -webkit-transform: scale(1) rotate(-21.17647059deg) translate(40vw) rotate(21.17647059deg);
             transform: scale(1) rotate(-21.17647059deg) translate(40vw) rotate(21.17647059deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(15) {
-    -webkit-transition-delay: 0.42352941s;
-            transition-delay: 0.42352941s;
     -webkit-transform: scale(1) rotate(-42.35294118deg) translate(40vw) rotate(42.35294118deg);
             transform: scale(1) rotate(-42.35294118deg) translate(40vw) rotate(42.35294118deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(14) {
-    -webkit-transition-delay: 0.63529412s;
-            transition-delay: 0.63529412s;
     -webkit-transform: scale(1) rotate(-63.52941176deg) translate(40vw) rotate(63.52941176deg);
             transform: scale(1) rotate(-63.52941176deg) translate(40vw) rotate(63.52941176deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(13) {
-    -webkit-transition-delay: 0.84705882s;
-            transition-delay: 0.84705882s;
     -webkit-transform: scale(1) rotate(-84.70588235deg) translate(40vw) rotate(84.70588235deg);
             transform: scale(1) rotate(-84.70588235deg) translate(40vw) rotate(84.70588235deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(12) {
-    -webkit-transition-delay: 1.05882353s;
-            transition-delay: 1.05882353s;
     -webkit-transform: scale(1) rotate(-105.88235294deg) translate(40vw) rotate(105.88235294deg);
             transform: scale(1) rotate(-105.88235294deg) translate(40vw) rotate(105.88235294deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(11) {
-    -webkit-transition-delay: 1.27058824s;
-            transition-delay: 1.27058824s;
     -webkit-transform: scale(1) rotate(-127.05882353deg) translate(40vw) rotate(127.05882353deg);
             transform: scale(1) rotate(-127.05882353deg) translate(40vw) rotate(127.05882353deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(10) {
-    -webkit-transition-delay: 1.48235294s;
-            transition-delay: 1.48235294s;
     -webkit-transform: scale(1) rotate(-148.23529412deg) translate(40vw) rotate(148.23529412deg);
             transform: scale(1) rotate(-148.23529412deg) translate(40vw) rotate(148.23529412deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(9) {
-    -webkit-transition-delay: 1.69411765s;
-            transition-delay: 1.69411765s;
     -webkit-transform: scale(1) rotate(-169.41176471deg) translate(40vw) rotate(169.41176471deg);
             transform: scale(1) rotate(-169.41176471deg) translate(40vw) rotate(169.41176471deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(8) {
-    -webkit-transition-delay: 1.90588235s;
-            transition-delay: 1.90588235s;
     -webkit-transform: scale(1) rotate(-190.58823529deg) translate(40vw) rotate(190.58823529deg);
             transform: scale(1) rotate(-190.58823529deg) translate(40vw) rotate(190.58823529deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(7) {
-    -webkit-transition-delay: 2.11764706s;
-            transition-delay: 2.11764706s;
     -webkit-transform: scale(1) rotate(-211.76470588deg) translate(40vw) rotate(211.76470588deg);
             transform: scale(1) rotate(-211.76470588deg) translate(40vw) rotate(211.76470588deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(6) {
-    -webkit-transition-delay: 2.32941176s;
-            transition-delay: 2.32941176s;
     -webkit-transform: scale(1) rotate(-232.94117647deg) translate(40vw) rotate(232.94117647deg);
             transform: scale(1) rotate(-232.94117647deg) translate(40vw) rotate(232.94117647deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(5) {
-    -webkit-transition-delay: 2.54117647s;
-            transition-delay: 2.54117647s;
     -webkit-transform: scale(1) rotate(-254.11764706deg) translate(40vw) rotate(254.11764706deg);
             transform: scale(1) rotate(-254.11764706deg) translate(40vw) rotate(254.11764706deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(4) {
-    -webkit-transition-delay: 2.75294118s;
-            transition-delay: 2.75294118s;
     -webkit-transform: scale(1) rotate(-275.29411765deg) translate(40vw) rotate(275.29411765deg);
             transform: scale(1) rotate(-275.29411765deg) translate(40vw) rotate(275.29411765deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(3) {
-    -webkit-transition-delay: 2.96470588s;
-            transition-delay: 2.96470588s;
     -webkit-transform: scale(1) rotate(-296.47058824deg) translate(40vw) rotate(296.47058824deg);
             transform: scale(1) rotate(-296.47058824deg) translate(40vw) rotate(296.47058824deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(2) {
-    -webkit-transition-delay: 3.17647059s;
-            transition-delay: 3.17647059s;
     -webkit-transform: scale(1) rotate(-317.64705882deg) translate(40vw) rotate(317.64705882deg);
             transform: scale(1) rotate(-317.64705882deg) translate(40vw) rotate(317.64705882deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(1) {
-    -webkit-transition-delay: 3.38823529s;
-            transition-delay: 3.38823529s;
     -webkit-transform: scale(1) rotate(-338.82352941deg) translate(40vw) rotate(338.82352941deg);
             transform: scale(1) rotate(-338.82352941deg) translate(40vw) rotate(338.82352941deg);
   }
@@ -319,104 +252,70 @@
     transition: all 0.5s ease-out;
   }
   .menu--open .ot-btn-menu-items li:nth-child(17) {
-    -webkit-transition-delay: 0s;
-            transition-delay: 0s;
     -webkit-transform: scale(1) rotate(0deg) translate(42.5vw) rotate(0deg);
             transform: scale(1) rotate(0deg) translate(42.5vw) rotate(0deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(16) {
-    -webkit-transition-delay: 0.10588235s;
-            transition-delay: 0.10588235s;
     -webkit-transform: scale(1) rotate(-10.58823529deg) translate(42.5vw) rotate(10.58823529deg);
             transform: scale(1) rotate(-10.58823529deg) translate(42.5vw) rotate(10.58823529deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(15) {
-    -webkit-transition-delay: 0.21176471s;
-            transition-delay: 0.21176471s;
     -webkit-transform: scale(1) rotate(-21.17647059deg) translate(42.5vw) rotate(21.17647059deg);
             transform: scale(1) rotate(-21.17647059deg) translate(42.5vw) rotate(21.17647059deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(14) {
-    -webkit-transition-delay: 0.31764706s;
-            transition-delay: 0.31764706s;
     -webkit-transform: scale(1) rotate(-31.76470588deg) translate(42.5vw) rotate(31.76470588deg);
             transform: scale(1) rotate(-31.76470588deg) translate(42.5vw) rotate(31.76470588deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(13) {
-    -webkit-transition-delay: 0.42352941s;
-            transition-delay: 0.42352941s;
     -webkit-transform: scale(1) rotate(-42.35294118deg) translate(42.5vw) rotate(42.35294118deg);
             transform: scale(1) rotate(-42.35294118deg) translate(42.5vw) rotate(42.35294118deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(12) {
-    -webkit-transition-delay: 0.52941176s;
-            transition-delay: 0.52941176s;
     -webkit-transform: scale(1) rotate(-52.94117647deg) translate(42.5vw) rotate(52.94117647deg);
             transform: scale(1) rotate(-52.94117647deg) translate(42.5vw) rotate(52.94117647deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(11) {
-    -webkit-transition-delay: 0.63529412s;
-            transition-delay: 0.63529412s;
     -webkit-transform: scale(1) rotate(-63.52941176deg) translate(42.5vw) rotate(63.52941176deg);
             transform: scale(1) rotate(-63.52941176deg) translate(42.5vw) rotate(63.52941176deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(10) {
-    -webkit-transition-delay: 0.74117647s;
-            transition-delay: 0.74117647s;
     -webkit-transform: scale(1) rotate(-74.11764706deg) translate(42.5vw) rotate(74.11764706deg);
             transform: scale(1) rotate(-74.11764706deg) translate(42.5vw) rotate(74.11764706deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(9) {
-    -webkit-transition-delay: 0.84705882s;
-            transition-delay: 0.84705882s;
     -webkit-transform: scale(1) rotate(-84.70588235deg) translate(42.5vw) rotate(84.70588235deg);
             transform: scale(1) rotate(-84.70588235deg) translate(42.5vw) rotate(84.70588235deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(8) {
-    -webkit-transition-delay: 0.95294118s;
-            transition-delay: 0.95294118s;
     -webkit-transform: scale(1) rotate(-95.29411765deg) translate(42.5vw) rotate(95.29411765deg);
             transform: scale(1) rotate(-95.29411765deg) translate(42.5vw) rotate(95.29411765deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(7) {
-    -webkit-transition-delay: 1.05882353s;
-            transition-delay: 1.05882353s;
     -webkit-transform: scale(1) rotate(-105.88235294deg) translate(42.5vw) rotate(105.88235294deg);
             transform: scale(1) rotate(-105.88235294deg) translate(42.5vw) rotate(105.88235294deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(6) {
-    -webkit-transition-delay: 1.16470588s;
-            transition-delay: 1.16470588s;
     -webkit-transform: scale(1) rotate(-116.47058824deg) translate(42.5vw) rotate(116.47058824deg);
             transform: scale(1) rotate(-116.47058824deg) translate(42.5vw) rotate(116.47058824deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(5) {
-    -webkit-transition-delay: 1.27058824s;
-            transition-delay: 1.27058824s;
     -webkit-transform: scale(1) rotate(-127.05882353deg) translate(42.5vw) rotate(127.05882353deg);
             transform: scale(1) rotate(-127.05882353deg) translate(42.5vw) rotate(127.05882353deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(4) {
-    -webkit-transition-delay: 1.37647059s;
-            transition-delay: 1.37647059s;
     -webkit-transform: scale(1) rotate(-137.64705882deg) translate(42.5vw) rotate(137.64705882deg);
             transform: scale(1) rotate(-137.64705882deg) translate(42.5vw) rotate(137.64705882deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(3) {
-    -webkit-transition-delay: 1.48235294s;
-            transition-delay: 1.48235294s;
     -webkit-transform: scale(1) rotate(-148.23529412deg) translate(42.5vw) rotate(148.23529412deg);
             transform: scale(1) rotate(-148.23529412deg) translate(42.5vw) rotate(148.23529412deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(2) {
-    -webkit-transition-delay: 1.58823529s;
-            transition-delay: 1.58823529s;
     -webkit-transform: scale(1) rotate(-158.82352941deg) translate(42.5vw) rotate(158.82352941deg);
             transform: scale(1) rotate(-158.82352941deg) translate(42.5vw) rotate(158.82352941deg);
   }
   .menu--open .ot-btn-menu-items li:nth-child(1) {
-    -webkit-transition-delay: 1.69411765s;
-            transition-delay: 1.69411765s;
     -webkit-transform: scale(1) rotate(-169.41176471deg) translate(42.5vw) rotate(169.41176471deg);
             transform: scale(1) rotate(-169.41176471deg) translate(42.5vw) rotate(169.41176471deg);
   }
@@ -460,7 +359,7 @@
   -webkit-tap-highlight-color: transparent;
 }
 .menu--open .ot-btn-menu-items li button {
-  box-shadow: 0 0 20px 4px rgba(0, 0, 0, 0.4), 0 0 60px 20px white;
+  box-shadow: 0px 1px 20px 1px rgba(0, 0, 0, 0.4), 0 0 60px 20px white;
 }
 .ot-btn-menu-items img {
   vertical-align: bottom;
@@ -482,7 +381,7 @@
   transition: fill 0.3s;
 }
 .menu--open .ot-morph-shape svg {
-  fill: #777;
+  fill: #0000ff;
 }
 [data-tooltip] {
   position: relative;
@@ -642,6 +541,14 @@
   background: url('../../assets/rhys-bg.gif') center center fixed;
   background-size: cover;
 }
+.rian-coughlan .ot-takeover {
+  background: url('../../assets/rian-bg.jpg') center center fixed;
+  background-size: 200px;
+}
+.alana-francis .ot-takeover {
+  background: url('../../assets/alana-bg.jpg') center center fixed;
+  background-size: cover;
+}
 .gery-georgieva .ot-takeover {
   background: url('../../assets/gery-bg.jpg') center center fixed;
   background-size: cover;
@@ -650,9 +557,30 @@
   background: url('../../assets/anna-h-bg.jpg') center center fixed;
   background-size: cover;
 }
+.jack-killick .ot-takeover {
+  background: url('../../assets/jack-bg.jpg') center center fixed;
+  background-size: cover;
+}
+.molly-palmer .ot-takeover {
+  background: url('../../assets/molly-bg.gif') center center fixed;
+  background-size: cover;
+}
+.rafal-topolewski .ot-takeover {
+  background: url('../../assets/rafal-bg.jpg') center center fixed;
+  background-size: cover;
+}
 .wanda-wieser .ot-takeover {
   background: url('../../assets/wanda-bg.jpg') center center fixed;
   background-size: contain;
+}
+.undy-pillows-top {
+  background: url('../../assets/claire-bg.gif') no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .clearfix:before,
 .clearfix:after {

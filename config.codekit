@@ -2,6 +2,28 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19115",
 "files": {
+	"\/assets\/alana-bg.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 762389,
+		"inputAbbreviatedPath": "\/assets\/alana-bg.JPG",
+		"outputAbbreviatedPath": "\/assets\/alana-bg.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/alana-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 62874,
+		"inputAbbreviatedPath": "\/assets\/alana-button.jpg",
+		"outputAbbreviatedPath": "\/assets\/alana-button.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/anna-h-bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -57,6 +79,61 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/jack-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 797389,
+		"inputAbbreviatedPath": "\/assets\/jack-bg.jpg",
+		"outputAbbreviatedPath": "\/assets\/jack-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/jack-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.32892e+06,
+		"inputAbbreviatedPath": "\/assets\/jack-button.jpg",
+		"outputAbbreviatedPath": "\/assets\/jack-button.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/molly-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32403,
+		"inputAbbreviatedPath": "\/assets\/molly-button.jpg",
+		"outputAbbreviatedPath": "\/assets\/molly-button.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/rafal-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.4295e+06,
+		"inputAbbreviatedPath": "\/assets\/rafal-bg.jpg",
+		"outputAbbreviatedPath": "\/assets\/rafal-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/rafal-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15519,
+		"inputAbbreviatedPath": "\/assets\/rafal-button.jpg",
+		"outputAbbreviatedPath": "\/assets\/rafal-button.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/rhys-button.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -64,6 +141,28 @@
 		"initialSize": 18202,
 		"inputAbbreviatedPath": "\/assets\/rhys-button.jpg",
 		"outputAbbreviatedPath": "\/assets\/rhys-button.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/rian-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 318835,
+		"inputAbbreviatedPath": "\/assets\/rian-bg.jpg",
+		"outputAbbreviatedPath": "\/assets\/rian-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/rian-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 438320,
+		"inputAbbreviatedPath": "\/assets\/rian-button.jpg",
+		"outputAbbreviatedPath": "\/assets\/rian-button.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -501,6 +600,37 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/demos\/ra-overlay\/min\/ot-main.min.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/demos\/ra-overlay\/min\/ot-main.min.js",
+		"outputAbbreviatedPath": "\/demos\/ra-overlay\/min\/min\/ot-main.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/demos\/ra-overlay\/ot-main-old-1.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/demos\/ra-overlay\/ot-main-old-1.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/demos\/ra-overlay\/ot-main-old-1.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/demos\/ra-overlay\/ot-main-old-1.js",
+		"outputAbbreviatedPath": "\/demos\/ra-overlay\/min\/ot-main-old-1-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/demos\/ra-overlay\/ot-main-old.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -561,12 +691,34 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/demos\/raw-demo\/js\/min\/main-min (Paul’s MacBook Air's conflicted copy 2016-06-14).js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/demos\/raw-demo\/js\/min\/main-min (Paul’s MacBook Air's conflicted copy 2016-06-14).js",
+		"outputAbbreviatedPath": "\/demos\/raw-demo\/js\/min\/min\/main-min (Paul’s MacBook Air's conflicted copy 2016-06-14)-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/demos\/raw-demo\/js\/min\/main-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/demos\/raw-demo\/js\/min\/main-min.js",
 		"outputAbbreviatedPath": "\/demos\/raw-demo\/js\/min\/min\/main-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/demos\/raw-demo\/js\/min\/min\/main-min (Paul’s MacBook Air's conflicted copy 2016-06-14)-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/demos\/raw-demo\/js\/min\/min\/main-min (Paul’s MacBook Air's conflicted copy 2016-06-14)-min.js",
+		"outputAbbreviatedPath": "\/demos\/raw-demo\/js\/min\/min\/min\/main-min (Paul’s MacBook Air's conflicted copy 2016-06-14)-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
