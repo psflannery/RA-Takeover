@@ -1,0 +1,141 @@
+//
+// Backgrounds
+// --------------------------------------------------
+
+.ot-takeover {
+	.transition(all 3s ease);
+	svg:not(:root) {
+		overflow: visible;
+	}
+	.rhys-coren & {
+		background: url('../../assets/rhys-bg.gif') center center fixed;
+		background-size: cover;
+	}
+    .rian-coughlan & {
+		background: url('../../assets/rian-bg.jpg') center center fixed;
+		background-size: cover;
+	}
+    .alana-francis & {
+		background: url('../../assets/alana-bg.jpg') center center fixed;
+		background-size: cover;
+	}
+	.gery-georgieva & {
+		background: url('../../assets/gery-bg.jpg') center center fixed;
+		background-size: cover;
+	}
+	.anna-hughes & {
+		background: url('../../assets/anna-h-bg.jpg') center center fixed;
+		background-size: cover;		
+	}
+	.jack-killick & {
+		background: url('../../assets/jack-bg.jpg') center center fixed;
+		background-size: cover;		
+	}
+	.molly-palmer & {
+		background: url('../../assets/molly-bg.gif') center center fixed;
+		background-size: cover;		
+	}
+	.rafal-topolewski & {
+		background: url('../../assets/rafal-bg.jpg') center center fixed;
+		background-size: cover;		
+	}
+	.wanda-wieser & {
+		background: url('../../assets/wanda-bg.jpg') center center fixed;
+		background-size: contain;	
+	}
+	div {
+		&:nth-child(even) {
+			//animation: camerawork 60s infinite linear;
+			img {
+		    	animation: anticlockwise 5s infinite linear;
+		    }
+		}
+		&:nth-child(odd) {
+	    	background-color: transparent;
+	    	//animation: anticlockwise 30s infinite linear;
+	    	//animation: camerawork 100s infinite linear;
+	    	img {
+	    		animation: spin 60s infinite linear;
+	    	}
+		}
+	}
+	p {
+		&:nth-child(odd) {
+			font-size: 5vw;
+			color: #fff;
+			transform: rotate(-45deg) skew(15deg, 15deg) translate(-50%, -50%);
+			animation: camerawork 100s infinite linear;
+			position: fixed;
+			top: 50%;
+			/*&:after {
+				content: '\270C';
+				font-size: 90px;
+			}*/
+		}
+		&:nth-child(even) {
+			font-size: 2vw;
+			//color: transparent;
+			text-shadow: 0 0 10px red;
+			transform: rotate(-45deg) skew(15deg, 15deg) translate(-50%, -50%);
+			animation: camerawork 200s infinite linear;
+			position: fixed;
+			top: 50%;
+		}
+		&:nth-child(3n) {
+			color: transparent;
+			text-shadow: 0 0 10px #000;
+			animation: camerawork 50s infinite linear;
+		}
+	}
+	img {
+		//display: none;
+	}
+}
+.undy-pillows-top {
+	background: url('../../assets/claire-bg.gif') no-repeat;
+	background-size: cover;
+}
+#ot-overlay {
+    &.active {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+/*
+.ot-takeover > div {
+    background-blend-mode: multiply;
+    -webkit-transform: skew(15deg, 15deg);
+    -moz-transform: skew(15deg, 15deg);
+    -ms-transform: skew(15deg, 15deg);
+    -o-transform: skew(15deg, 15deg);
+    transform: skew(15deg, 15deg);
+}
+.ot-takeover div:nth-child(even) {
+    background-color: red;
+    -webkit-animation: clockwise 600s infinite linear;
+    -moz-animation: clockwise 600s infinite linear;
+    -ms-animation: clockwise 600s infinite linear;
+    -o-animation: clockwise 600s infinite linear;
+    animation: clockwise 600s infinite linear;
+}
+.ot-takeover div:nth-child(odd) {
+    background-color: blue;
+    background-attachment: fixed;
+    -webkit-animation: anti-clockwise 100s infinite linear;
+    -moz-animation: anti-clockwise 100s infinite linear;
+    -ms-animation: anti-clockwise 100s infinite linear;
+    -o-animation: anti-clockwise 100s infinite linear;
+    animation: anti-clockwise 100s infinite linear;
+}
+.ot-takeover p {
+    -webkit-transform: rotate(-45deg) skew(15deg, 15deg);
+    -moz-transform: rotate(-45deg) skew(15deg, 15deg);
+    -ms-transform: rotate(-45deg) skew(15deg, 15deg);
+    -o-transform: rotate(-45deg) skew(15deg, 15deg);
+    transform: rotate(-45deg) skew(15deg, 15deg);
+}
+*/
