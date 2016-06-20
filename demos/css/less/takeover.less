@@ -3,10 +3,34 @@
 // --------------------------------------------------
 
 .ot-takeover {
-	.transition(all 3s ease);
+    // Globals
+    div {
+        overflow: visible;
+    }
+    border: 20px solid;
+	transition: all 3s ease;
+    // Tweaks to RA styles
+    svg {
+        z-index: @zindex-launch-button;
+    }
 	svg:not(:root) {
 		overflow: visible;
 	}
+    .module-promo {
+        .opacity(0);
+    }
+    .panel {
+        &:hover {
+            background: transparent;
+        }
+    }
+    section {
+        background-color: transparent !important;
+        //animation: camerawork 60s infinite linear
+    }
+    
+    //
+    // Artists
 	.rhys-coren & {
 		background: url('../../assets/rhys-bg.gif') center center fixed;
 		background-size: cover;
@@ -19,12 +43,25 @@
 		background: url('../../assets/alana-bg.jpg') center center fixed;
 		background-size: cover;
 	}
+	.kira-freije & {
+		//background: url('../../assets/kira-bg.png') center center fixed;
+		//background-size: cover;
+		background-color: #009c3b;
+	}
 	.gery-georgieva & {
 		background: url('../../assets/gery-bg.jpg') center center fixed;
 		background-size: cover;
 	}
 	.anna-hughes & {
 		background: url('../../assets/anna-h-bg.jpg') center center fixed;
+		background-size: cover;		
+	}
+	.frank-kent & {
+		background: url('../../assets/frank-bg.jpg') center center fixed;
+		background-size: cover;		
+	}
+	.neill-kidgell & {
+		background: url('../../assets/neill-bg.jpg') center center fixed;
 		background-size: cover;		
 	}
 	.jack-killick & {
@@ -35,6 +72,14 @@
 		background: url('../../assets/molly-bg.gif') center center fixed;
 		background-size: cover;		
 	}
+	.anna-paterson & {
+		background: url('../../assets/anna-p-bg.gif') center center fixed;
+		background-size: cover;		
+	}
+	.robin-seir & {
+		background: url('../../assets/robin-bg.jpg') center center fixed;
+		background-size: cover;	
+	}
 	.rafal-topolewski & {
 		background: url('../../assets/rafal-bg.jpg') center center fixed;
 		background-size: cover;		
@@ -43,22 +88,75 @@
 		background: url('../../assets/wanda-bg.jpg') center center fixed;
 		background-size: contain;	
 	}
-	div {
+	.tom-worsfold & {
+		background: url('../../assets/tom-bg.jpg') center center fixed;
+		background-size: cover;	
+	}
+    p {
+        animation: camerawork 120s infinite linear;
+        //display: none;
+    }
+    div > {
+        &:extend(.ot-takeover section);
+        //animation: camerawork 60s infinite linear;
+        &:nth-child(even) {
+			animation: camerawork 60s infinite linear;
+		}
+        &:nth-child(odd) {
+	    	background-color: black;
+	    	animation: anticlockwise 130s infinite linear;
+	    	//animation: camerawork 100s infinite linear;
+		}
+    }
+	/*
+    div {
 		&:nth-child(even) {
-			//animation: camerawork 60s infinite linear;
+			animation: camerawork 60s infinite linear;
 			img {
 		    	animation: anticlockwise 5s infinite linear;
 		    }
 		}
 		&:nth-child(odd) {
-	    	background-color: transparent;
-	    	//animation: anticlockwise 30s infinite linear;
+	    	//background-color: black;
+	    	animation: anticlockwise 30s infinite linear;
 	    	//animation: camerawork 100s infinite linear;
 	    	img {
 	    		animation: spin 60s infinite linear;
 	    	}
 		}
 	}
+    */
+    /*
+    div { 
+        -webkit-transform: skew(15deg, 15deg);
+        background: transparent !important;
+    } 
+    div:nth-child(odd) { 
+        -webkit-animation: clockwise 600s infinite linear; 
+    }
+    div:nth-child(even) {
+        -webkit-animation: camerawork 100s infinite linear;
+    } 
+    p {
+        -webkit-transform: rotate(-45deg) skew(15deg, 15deg); 
+    }
+    @-webkit-keyframes clockwise {
+        0% {
+            -webkit-transform: rotate(0deg) 
+        }
+        100% {
+            -webkit-transform: rotate(360deg)
+        }
+    }
+    @-webkit-keyframes anti-clockwise {
+        0% {
+            -webkit-transform: rotate(0deg)
+        } 100% {
+            -webkit-transform: rotate(-360deg)
+        }
+    }
+    */
+    /*
 	p {
 		&:nth-child(odd) {
 			font-size: 5vw;
@@ -67,10 +165,10 @@
 			animation: camerawork 100s infinite linear;
 			position: fixed;
 			top: 50%;
-			/*&:after {
-				content: '\270C';
-				font-size: 90px;
-			}*/
+			//&:after {
+			//	content: '\270C';
+			//	font-size: 90px;
+			//}
 		}
 		&:nth-child(even) {
 			font-size: 2vw;
@@ -87,13 +185,24 @@
 			animation: camerawork 50s infinite linear;
 		}
 	}
+    */
+    
 	img {
-		//display: none;
+		.opacity(0.5);
 	}
 }
-.undy-pillows-top {
+.claire-undy-top {
 	background: url('../../assets/claire-bg.gif') no-repeat;
 	background-size: cover;
+}
+.elliot-dodd-top {
+	background: url('../../assets/elliot-bg.png') no-repeat;
+	background-size: contain;
+	.opacity(0.8);
+}
+.kira-freije-top {
+	background: url('../../assets/kira-bg.png') center center fixed no-repeat;
+	background-size: contain;
 }
 #ot-overlay {
     &.active {

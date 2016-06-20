@@ -534,11 +534,107 @@
   width: 100%;
 }
 .ot-takeover {
+  border: 20px solid;
   -webkit-transition: all 3s ease;
   transition: all 3s ease;
+  /*
+    div {
+		&:nth-child(even) {
+			animation: camerawork 60s infinite linear;
+			img {
+		    	animation: anticlockwise 5s infinite linear;
+		    }
+		}
+		&:nth-child(odd) {
+	    	//background-color: black;
+	    	animation: anticlockwise 30s infinite linear;
+	    	//animation: camerawork 100s infinite linear;
+	    	img {
+	    		animation: spin 60s infinite linear;
+	    	}
+		}
+	}
+    */
+  /*
+    div { 
+        -webkit-transform: skew(15deg, 15deg);
+        background: transparent !important;
+    } 
+    div:nth-child(odd) { 
+        -webkit-animation: clockwise 600s infinite linear; 
+    }
+    div:nth-child(even) {
+        -webkit-animation: camerawork 100s infinite linear;
+    } 
+    p {
+        -webkit-transform: rotate(-45deg) skew(15deg, 15deg); 
+    }
+    @-webkit-keyframes clockwise {
+        0% {
+            -webkit-transform: rotate(0deg) 
+        }
+        100% {
+            -webkit-transform: rotate(360deg)
+        }
+    }
+    @-webkit-keyframes anti-clockwise {
+        0% {
+            -webkit-transform: rotate(0deg)
+        } 100% {
+            -webkit-transform: rotate(-360deg)
+        }
+    }
+    */
+  /*
+	p {
+		&:nth-child(odd) {
+			font-size: 5vw;
+			color: #fff;
+			transform: rotate(-45deg) skew(15deg, 15deg) translate(-50%, -50%);
+			animation: camerawork 100s infinite linear;
+			position: fixed;
+			top: 50%;
+			//&:after {
+			//	content: '\270C';
+			//	font-size: 90px;
+			//}
+		}
+		&:nth-child(even) {
+			font-size: 2vw;
+			//color: transparent;
+			text-shadow: 0 0 10px red;
+			transform: rotate(-45deg) skew(15deg, 15deg) translate(-50%, -50%);
+			animation: camerawork 200s infinite linear;
+			position: fixed;
+			top: 50%;
+		}
+		&:nth-child(3n) {
+			color: transparent;
+			text-shadow: 0 0 10px #000;
+			animation: camerawork 50s infinite linear;
+		}
+	}
+    */
+}
+.ot-takeover div {
+  overflow: visible;
+}
+.ot-takeover svg {
+  z-index: 1010;
 }
 .ot-takeover svg:not(:root) {
   overflow: visible;
+}
+.ot-takeover .module-promo {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.ot-takeover .panel:hover {
+  background: transparent;
+}
+.ot-takeover section,
+.ot-takeover div {
+  background-color: transparent !important;
 }
 .rhys-coren .ot-takeover {
   background: url('../../assets/rhys-bg.gif') center center fixed;
@@ -552,12 +648,23 @@
   background: url('../../assets/alana-bg.jpg') center center fixed;
   background-size: cover;
 }
+.kira-freije .ot-takeover {
+  background-color: #009c3b;
+}
 .gery-georgieva .ot-takeover {
   background: url('../../assets/gery-bg.jpg') center center fixed;
   background-size: cover;
 }
 .anna-hughes .ot-takeover {
   background: url('../../assets/anna-h-bg.jpg') center center fixed;
+  background-size: cover;
+}
+.frank-kent .ot-takeover {
+  background: url('../../assets/frank-bg.jpg') center center fixed;
+  background-size: cover;
+}
+.neill-kidgell .ot-takeover {
+  background: url('../../assets/neill-bg.jpg') center center fixed;
   background-size: cover;
 }
 .jack-killick .ot-takeover {
@@ -568,6 +675,14 @@
   background: url('../../assets/molly-bg.gif') center center fixed;
   background-size: cover;
 }
+.anna-paterson .ot-takeover {
+  background: url('../../assets/anna-p-bg.gif') center center fixed;
+  background-size: cover;
+}
+.robin-seir .ot-takeover {
+  background: url('../../assets/robin-bg.jpg') center center fixed;
+  background-size: cover;
+}
 .rafal-topolewski .ot-takeover {
   background: url('../../assets/rafal-bg.jpg') center center fixed;
   background-size: cover;
@@ -576,50 +691,40 @@
   background: url('../../assets/wanda-bg.jpg') center center fixed;
   background-size: contain;
 }
-.ot-takeover div:nth-child(even) img {
-  -webkit-animation: anticlockwise 5s infinite linear;
-          animation: anticlockwise 5s infinite linear;
+.tom-worsfold .ot-takeover {
+  background: url('../../assets/tom-bg.jpg') center center fixed;
+  background-size: cover;
+}
+.ot-takeover p {
+  -webkit-animation: camerawork 120s infinite linear;
+          animation: camerawork 120s infinite linear;
+}
+.ot-takeover div:nth-child(even) {
+  -webkit-animation: camerawork 60s infinite linear;
+          animation: camerawork 60s infinite linear;
 }
 .ot-takeover div:nth-child(odd) {
-  background-color: transparent;
+  background-color: black;
+  -webkit-animation: anticlockwise 130s infinite linear;
+          animation: anticlockwise 130s infinite linear;
 }
-.ot-takeover div:nth-child(odd) img {
-  -webkit-animation: spin 60s infinite linear;
-          animation: spin 60s infinite linear;
+.ot-takeover img {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }
-.ot-takeover p:nth-child(odd) {
-  font-size: 5vw;
-  color: #fff;
-  -webkit-transform: rotate(-45deg) skew(15deg, 15deg) translate(-50%, -50%);
-          transform: rotate(-45deg) skew(15deg, 15deg) translate(-50%, -50%);
-  -webkit-animation: camerawork 100s infinite linear;
-          animation: camerawork 100s infinite linear;
-  position: fixed;
-  top: 50%;
-  /*&:after {
-				content: '\270C';
-				font-size: 90px;
-			}*/
-}
-.ot-takeover p:nth-child(even) {
-  font-size: 2vw;
-  text-shadow: 0 0 10px red;
-  -webkit-transform: rotate(-45deg) skew(15deg, 15deg) translate(-50%, -50%);
-          transform: rotate(-45deg) skew(15deg, 15deg) translate(-50%, -50%);
-  -webkit-animation: camerawork 200s infinite linear;
-          animation: camerawork 200s infinite linear;
-  position: fixed;
-  top: 50%;
-}
-.ot-takeover p:nth-child(3n) {
-  color: transparent;
-  text-shadow: 0 0 10px #000;
-  -webkit-animation: camerawork 50s infinite linear;
-          animation: camerawork 50s infinite linear;
-}
-.undy-pillows-top {
+.claire-undy-top {
   background: url('../../assets/claire-bg.gif') no-repeat;
   background-size: cover;
+}
+.elliot-dodd-top {
+  background: url('../../assets/elliot-bg.png') no-repeat;
+  background-size: contain;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+.kira-freije-top {
+  background: url('../../assets/kira-bg.png') center center fixed no-repeat;
+  background-size: contain;
 }
 #ot-overlay.active {
   position: fixed;
@@ -662,41 +767,6 @@
     transform: rotate(-45deg) skew(15deg, 15deg);
 }
 */
-.converted-to-svg-5 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-.converted-to-svg-4 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-65%, -65%);
-  transform: translate(-65%, -65%);
-}
-.converted-to-svg-3 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-80%, -80%);
-  transform: translate(-80%, -80%);
-}
-.converted-to-svg-2 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-95%, -95%);
-  transform: translate(-95%, -95%);
-}
-.converted-to-svg-1 {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-110%, -110%);
-  transform: translate(-110%, -110%);
-}
 @-webkit-keyframes clockwise {
   from {
     -webkit-transform: rotate(0deg);

@@ -13,11 +13,22 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/alana-button.jpg": {
+	"\/assets\/alana-button-original.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 62874,
+		"inputAbbreviatedPath": "\/assets\/alana-button-original.jpg",
+		"outputAbbreviatedPath": "\/assets\/alana-button-original.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/alana-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17957,
 		"inputAbbreviatedPath": "\/assets\/alana-button.jpg",
 		"outputAbbreviatedPath": "\/assets\/alana-button.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -46,6 +57,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/anna-p-button-old.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 294053,
+		"inputAbbreviatedPath": "\/assets\/anna-p-button-old.png",
+		"outputAbbreviatedPath": "\/assets\/anna-p-button-old.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/anna-p-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 104404,
+		"inputAbbreviatedPath": "\/assets\/anna-p-button.jpg",
+		"outputAbbreviatedPath": "\/assets\/anna-p-button.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/anon.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -53,6 +86,72 @@
 		"initialSize": 46120,
 		"inputAbbreviatedPath": "\/assets\/anon.png",
 		"outputAbbreviatedPath": "\/assets\/anon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/claire-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 96817,
+		"inputAbbreviatedPath": "\/assets\/claire-button.jpg",
+		"outputAbbreviatedPath": "\/assets\/claire-button.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/elliot-bg-original.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.79392e+06,
+		"inputAbbreviatedPath": "\/assets\/elliot-bg-original.png",
+		"outputAbbreviatedPath": "\/assets\/elliot-bg-original.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/elliot-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 360403,
+		"inputAbbreviatedPath": "\/assets\/elliot-bg.png",
+		"outputAbbreviatedPath": "\/assets\/elliot-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/elliot-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18843,
+		"inputAbbreviatedPath": "\/assets\/elliot-button.jpg",
+		"outputAbbreviatedPath": "\/assets\/elliot-button.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/frank-bg.JPG": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 320894,
+		"inputAbbreviatedPath": "\/assets\/frank-bg.JPG",
+		"outputAbbreviatedPath": "\/assets\/frank-bg.JPG",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/frank-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 87072,
+		"inputAbbreviatedPath": "\/assets\/frank-button.jpg",
+		"outputAbbreviatedPath": "\/assets\/frank-button.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -90,13 +189,68 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/jack-button.jpg": {
+	"\/assets\/jack-button-original.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 2.32892e+06,
+		"inputAbbreviatedPath": "\/assets\/jack-button-original.jpg",
+		"outputAbbreviatedPath": "\/assets\/jack-button-original.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/jack-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15935,
 		"inputAbbreviatedPath": "\/assets\/jack-button.jpg",
 		"outputAbbreviatedPath": "\/assets\/jack-button.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/kira-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 253526,
+		"inputAbbreviatedPath": "\/assets\/kira-bg.png",
+		"outputAbbreviatedPath": "\/assets\/kira-bg.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/kira-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26812,
+		"inputAbbreviatedPath": "\/assets\/kira-button.jpg",
+		"outputAbbreviatedPath": "\/assets\/kira-button.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/kira-button.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 563493,
+		"inputAbbreviatedPath": "\/assets\/kira-button.png",
+		"outputAbbreviatedPath": "\/assets\/kira-button.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/molly-button-original.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 32403,
+		"inputAbbreviatedPath": "\/assets\/molly-button-original.jpg",
+		"outputAbbreviatedPath": "\/assets\/molly-button-original.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -105,9 +259,31 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 32403,
+		"initialSize": 13830,
 		"inputAbbreviatedPath": "\/assets\/molly-button.jpg",
 		"outputAbbreviatedPath": "\/assets\/molly-button.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/neill-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 426363,
+		"inputAbbreviatedPath": "\/assets\/neill-bg.jpg",
+		"outputAbbreviatedPath": "\/assets\/neill-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/neill-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1518,
+		"inputAbbreviatedPath": "\/assets\/neill-button.jpg",
+		"outputAbbreviatedPath": "\/assets\/neill-button.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -156,13 +332,79 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/rian-button.jpg": {
+	"\/assets\/rian-button-original.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 438320,
+		"inputAbbreviatedPath": "\/assets\/rian-button-original.jpg",
+		"outputAbbreviatedPath": "\/assets\/rian-button-original.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/rian-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 41526,
 		"inputAbbreviatedPath": "\/assets\/rian-button.jpg",
 		"outputAbbreviatedPath": "\/assets\/rian-button.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/robin-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 308563,
+		"inputAbbreviatedPath": "\/assets\/robin-bg.jpg",
+		"outputAbbreviatedPath": "\/assets\/robin-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/robin-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22385,
+		"inputAbbreviatedPath": "\/assets\/robin-button.jpg",
+		"outputAbbreviatedPath": "\/assets\/robin-button.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/robin-button.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 294536,
+		"inputAbbreviatedPath": "\/assets\/robin-button.png",
+		"outputAbbreviatedPath": "\/assets\/robin-button.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/tom-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.22802e+06,
+		"inputAbbreviatedPath": "\/assets\/tom-bg.jpg",
+		"outputAbbreviatedPath": "\/assets\/tom-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/tom-button.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5561,
+		"inputAbbreviatedPath": "\/assets\/tom-button.jpg",
+		"outputAbbreviatedPath": "\/assets\/tom-button.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -526,7 +768,7 @@
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/demos\/css\/less\/text.less",
 		"outputAbbreviatedPath": "\/demos\/css\/css\/text.css",
@@ -720,12 +962,34 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/demos\/raw-demo\/js\/main (LSE016330's conflicted copy 2016-06-16).js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/demos\/raw-demo\/js\/main (LSE016330's conflicted copy 2016-06-16).js",
+		"outputAbbreviatedPath": "\/demos\/raw-demo\/js\/min\/main (LSE016330's conflicted copy 2016-06-16)-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/demos\/raw-demo\/js\/main.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/demos\/raw-demo\/js\/main.js",
 		"outputAbbreviatedPath": "\/demos\/raw-demo\/js\/min\/main-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/demos\/raw-demo\/js\/min\/main-min (LSE016330's conflicted copy 2016-06-16).js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/demos\/raw-demo\/js\/min\/main-min (LSE016330's conflicted copy 2016-06-16).js",
+		"outputAbbreviatedPath": "\/demos\/raw-demo\/js\/min\/min\/main-min (LSE016330's conflicted copy 2016-06-16)-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
