@@ -92,9 +92,8 @@
 		background: url('../../assets/tom-bg.jpg') center center fixed;
 		background-size: cover;	
 	}
-    p {
+    p, .panel img {
         animation: camerawork 120s infinite linear;
-        //display: none;
     }
     div > {
         &:extend(.ot-takeover section);
@@ -107,86 +106,7 @@
 	    	animation: anticlockwise 130s infinite linear;
 	    	//animation: camerawork 100s infinite linear;
 		}
-    }
-	/*
-    div {
-		&:nth-child(even) {
-			animation: camerawork 60s infinite linear;
-			img {
-		    	animation: anticlockwise 5s infinite linear;
-		    }
-		}
-		&:nth-child(odd) {
-	    	//background-color: black;
-	    	animation: anticlockwise 30s infinite linear;
-	    	//animation: camerawork 100s infinite linear;
-	    	img {
-	    		animation: spin 60s infinite linear;
-	    	}
-		}
-	}
-    */
-    /*
-    div { 
-        -webkit-transform: skew(15deg, 15deg);
-        background: transparent !important;
-    } 
-    div:nth-child(odd) { 
-        -webkit-animation: clockwise 600s infinite linear; 
-    }
-    div:nth-child(even) {
-        -webkit-animation: camerawork 100s infinite linear;
-    } 
-    p {
-        -webkit-transform: rotate(-45deg) skew(15deg, 15deg); 
-    }
-    @-webkit-keyframes clockwise {
-        0% {
-            -webkit-transform: rotate(0deg) 
-        }
-        100% {
-            -webkit-transform: rotate(360deg)
-        }
-    }
-    @-webkit-keyframes anti-clockwise {
-        0% {
-            -webkit-transform: rotate(0deg)
-        } 100% {
-            -webkit-transform: rotate(-360deg)
-        }
-    }
-    */
-    /*
-	p {
-		&:nth-child(odd) {
-			font-size: 5vw;
-			color: #fff;
-			transform: rotate(-45deg) skew(15deg, 15deg) translate(-50%, -50%);
-			animation: camerawork 100s infinite linear;
-			position: fixed;
-			top: 50%;
-			//&:after {
-			//	content: '\270C';
-			//	font-size: 90px;
-			//}
-		}
-		&:nth-child(even) {
-			font-size: 2vw;
-			//color: transparent;
-			text-shadow: 0 0 10px red;
-			transform: rotate(-45deg) skew(15deg, 15deg) translate(-50%, -50%);
-			animation: camerawork 200s infinite linear;
-			position: fixed;
-			top: 50%;
-		}
-		&:nth-child(3n) {
-			color: transparent;
-			text-shadow: 0 0 10px #000;
-			animation: camerawork 50s infinite linear;
-		}
-	}
-    */
-    
+    }    
 	img {
 		.opacity(0.5);
 	}
@@ -213,38 +133,3 @@
         left: 0;
     }
 }
-
-/*
-.ot-takeover > div {
-    background-blend-mode: multiply;
-    -webkit-transform: skew(15deg, 15deg);
-    -moz-transform: skew(15deg, 15deg);
-    -ms-transform: skew(15deg, 15deg);
-    -o-transform: skew(15deg, 15deg);
-    transform: skew(15deg, 15deg);
-}
-.ot-takeover div:nth-child(even) {
-    background-color: red;
-    -webkit-animation: clockwise 600s infinite linear;
-    -moz-animation: clockwise 600s infinite linear;
-    -ms-animation: clockwise 600s infinite linear;
-    -o-animation: clockwise 600s infinite linear;
-    animation: clockwise 600s infinite linear;
-}
-.ot-takeover div:nth-child(odd) {
-    background-color: blue;
-    background-attachment: fixed;
-    -webkit-animation: anti-clockwise 100s infinite linear;
-    -moz-animation: anti-clockwise 100s infinite linear;
-    -ms-animation: anti-clockwise 100s infinite linear;
-    -o-animation: anti-clockwise 100s infinite linear;
-    animation: anti-clockwise 100s infinite linear;
-}
-.ot-takeover p {
-    -webkit-transform: rotate(-45deg) skew(15deg, 15deg);
-    -moz-transform: rotate(-45deg) skew(15deg, 15deg);
-    -ms-transform: rotate(-45deg) skew(15deg, 15deg);
-    -o-transform: rotate(-45deg) skew(15deg, 15deg);
-    transform: rotate(-45deg) skew(15deg, 15deg);
-}
-*/

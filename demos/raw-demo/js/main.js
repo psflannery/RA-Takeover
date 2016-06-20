@@ -79,9 +79,22 @@
             if(ot_first_click === true) {
                 ot_bg_preloader(
                     '../../assets/rhys-bg.gif',
+                    '../../assets/rian-bg.jpg',
+                    '../../assets/elliot-bg.png',
+                    '../../assets/alana-bg.jpg',
+                    '../../assets/kira-bg.jpg',
                     '../../assets/gery-bg.jpg',
                     '../../assets/anna-h-bg.jpg',
-                    '../../assets/wanda-bg.jpg'
+                    '../../assets/frank-bg.jpg',
+                    '../../assets/neill-bg.jpg',
+                    '../../assets/jack-bg.jpg',
+                    '../../assets/molly-bg.gif',
+                    '../../assets/anna-p-bg.gif',
+                    '../../assets/robin-bg.jpg',
+                    '../../assets/rafal-bg.jpg',
+                    '../../assets/claire-bg.jpg',
+                    '../../assets/wanda-bg.jpg',
+                    '../../assets/tom-bg.jpg'
                 );
                 ot_first_click = false;
             }
