@@ -712,17 +712,18 @@ fieldset[disabled] .ot-btn-link:focus {
 .ot-info-container-inner {
   width: 70%;
   margin: 15%;
-  font-size: 26px;
-  line-height: 70px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  .ot-info-container-inner {
+    font-size: 26px;
+    line-height: 70px;
+  }
 }
 .ot-modal-open {
   overflow: hidden;
 }
-/*
-.about-container {
-    cursor: url(/assets/images/cursor-close.png),auto;
-}
-*/
 @-webkit-keyframes clockwise {
   from {
     -webkit-transform: rotate(0deg);

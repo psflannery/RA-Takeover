@@ -383,6 +383,49 @@
 .menu--open .ot-morph-shape svg {
   fill: #0000ff;
 }
+.ot-btn-info {
+  position: fixed;
+  bottom: 25px;
+  right: 15px;
+  z-index: 1030;
+  width: 86px;
+  height: 86px;
+}
+.ot-btn-link {
+  color: #0000ff;
+  font-weight: normal;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: 26px;
+  text-decoration: none;
+}
+.ot-btn-link,
+.ot-btn-link:active,
+.ot-btn-link.active,
+.ot-btn-link[disabled],
+fieldset[disabled] .ot-btn-link {
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+}
+.ot-btn-link,
+.ot-btn-link:hover,
+.ot-btn-link:focus,
+.ot-btn-link:active {
+  border-color: transparent;
+}
+.ot-btn-link:hover,
+.ot-btn-link:focus {
+  color: #0000ff;
+  text-decoration: underline;
+}
+.ot-btn-link[disabled]:hover,
+fieldset[disabled] .ot-btn-link:hover,
+.ot-btn-link[disabled]:focus,
+fieldset[disabled] .ot-btn-link:focus {
+  color: rgba(0, 0, 255, 0.5);
+  text-decoration: none;
+}
 [data-tooltip] {
   position: relative;
 }
@@ -534,7 +577,6 @@
   width: 100%;
 }
 .ot-takeover {
-  border: 20px solid;
   -webkit-transition: all 3s ease;
   transition: all 3s ease;
 }
@@ -559,62 +601,62 @@
   background-color: transparent !important;
 }
 .rhys-coren .ot-takeover {
-  background: url('../assets/rhys-bg.gif') center center fixed;
+  background: url('../../assets/rhys-bg.gif') center center fixed;
   background-size: cover;
 }
 .rian-coughlan .ot-takeover {
-  background: url('../assets/rian-bg.jpg') center center fixed;
+  background: url('../../assets/rian-bg.jpg') center center fixed;
   background-size: cover;
 }
 .alana-francis .ot-takeover {
-  background: url('../assets/alana-bg.jpg') center center fixed;
+  background: url('../../assets/alana-bg.jpg') center center fixed;
   background-size: cover;
 }
 .kira-freije .ot-takeover {
   background-color: #009c3b;
 }
 .gery-georgieva .ot-takeover {
-  background: url('../assets/gery-bg.jpg') center center fixed;
+  background: url('../../assets/gery-bg.jpg') center center fixed;
   background-size: cover;
 }
 .anna-hughes .ot-takeover {
-  background: url('../assets/anna-h-bg.jpg') center center fixed;
+  background: url('../../assets/anna-h-bg.jpg') center center fixed;
   background-size: cover;
 }
 .frank-kent .ot-takeover {
-  background: url('../assets/frank-bg.jpg') center center fixed;
+  background: url('../../assets/frank-bg.jpg') center center fixed;
   background-size: cover;
 }
 .neill-kidgell .ot-takeover {
-  background: url('../assets/neill-bg.jpg') center center fixed;
+  background: url('../../assets/neill-bg.jpg') center center fixed;
   background-size: cover;
 }
 .jack-killick .ot-takeover {
-  background: url('../assets/jack-bg.jpg') center center fixed;
+  background: url('../../assets/jack-bg.jpg') center center fixed;
   background-size: cover;
 }
 .molly-palmer .ot-takeover {
-  background: url('../assets/molly-bg.gif') center center fixed;
+  background: url('../../assets/molly-bg.gif') center center fixed;
   background-size: cover;
 }
 .anna-paterson .ot-takeover {
-  background: url('../assets/anna-p-bg.gif') center center fixed;
+  background: url('../../assets/anna-p-bg.gif') center center fixed;
   background-size: cover;
 }
 .robin-seir .ot-takeover {
-  background: url('../assets/robin-bg.jpg') center center fixed;
+  background: url('../../assets/robin-bg.jpg') center center fixed;
   background-size: cover;
 }
 .rafal-topolewski .ot-takeover {
-  background: url('../assets/rafal-bg.jpg') center center fixed;
+  background: url('../../assets/rafal-bg.jpg') center center fixed;
   background-size: cover;
 }
 .wanda-wieser .ot-takeover {
-  background: url('../assets/wanda-bg.jpg') center center fixed;
+  background: url('../../assets/wanda-bg.jpg') center center fixed;
   background-size: contain;
 }
 .tom-worsfold .ot-takeover {
-  background: url('../assets/tom-bg.jpg') center center fixed;
+  background: url('../../assets/tom-bg.jpg') center center fixed;
   background-size: cover;
 }
 .ot-takeover p,
@@ -636,17 +678,17 @@
   filter: alpha(opacity=50);
 }
 .claire-undy-top {
-  background: url('../assets/claire-bg.gif') no-repeat;
+  background: url('../../assets/claire-bg.gif') center center no-repeat;
   background-size: cover;
 }
 .elliot-dodd-top {
-  background: url('../assets/elliot-bg.png') no-repeat;
+  background: url('../../assets/elliot-bg.png') center center no-repeat;
   background-size: contain;
   opacity: 0.8;
   filter: alpha(opacity=80);
 }
 .kira-freije-top {
-  background: url('../assets/kira-bg.png') center center fixed no-repeat;
+  background: url('../../assets/kira-bg.png') center center fixed no-repeat;
   background-size: contain;
 }
 #ot-overlay.active {
@@ -655,6 +697,32 @@
   right: 0;
   bottom: 0;
   left: 0;
+}
+.ot-info-container {
+  cursor: url('data:image/svg+xml;utf8,<svg version="1.1" id="close-cross" class="closer" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="35px" height="35px" viewBox="0 0 35 35" enable-background="new 0 0 35 35" xml:space="preserve">     <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="35" y1="0" x2="0" y2="35"></line>      <line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="0" y1="0" x2="35" y2="35"></line></svg>'), auto;
+  position: fixed;
+  z-index: 1020;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background: #fff;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.ot-info-container-inner {
+  width: 70%;
+  margin: 15%;
+  font-size: 18px;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  .ot-info-container-inner {
+    font-size: 26px;
+    line-height: 70px;
+  }
+}
+.ot-modal-open {
+  overflow: hidden;
 }
 @-webkit-keyframes clockwise {
   from {

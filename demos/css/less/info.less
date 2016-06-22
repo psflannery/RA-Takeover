@@ -15,14 +15,13 @@
 .ot-info-container-inner {
     width: 70%;
     margin: 15%;
-    font-size: @info-modal-font-size;
-    line-height: 70px;
+    font-size: @info-link-font-size-mobile;
+    line-height: 1.4;
+    @media (min-width: @screen-sm-min) {
+	    font-size: @info-modal-font-size;
+	    line-height: 70px;
+    }
 }
 .ot-modal-open{
 	overflow: hidden;
 }
-/*
-.about-container {
-    cursor: url(/assets/images/cursor-close.png),auto;
-}
-*/
