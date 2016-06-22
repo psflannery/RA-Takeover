@@ -113,3 +113,52 @@
         }
     }
 }
+.ot-btn-info {
+    //background-color: #fff;
+    position: fixed;
+    bottom: (@grid-gutter-width + 10px);
+    right: @grid-gutter-width;
+    z-index: @zindex-info-btn;
+    .square(86px);
+}
+
+
+// Make a button look and behave like a link
+.ot-btn-link {
+  color: @info-link-color;
+  font-weight: normal;
+  //border-radius: 50%;
+  border-radius: 0;
+  cursor: pointer;
+  font-size: @info-link-font-size;
+  text-decoration: none;
+
+  &,
+  &:active,
+  &.active,
+  &[disabled],
+  fieldset[disabled] & {
+    background-color: transparent;
+    .box-shadow(none);
+    outline: none;
+  }
+  &,
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: transparent;
+  }
+  &:hover,
+  &:focus {
+    color: @info-link-hover-color;
+    text-decoration: @info-link-hover-decoration;
+  }
+  &[disabled],
+  fieldset[disabled] & {
+    &:hover,
+    &:focus {
+      color: @btn-link-disabled-color;
+      text-decoration: none;
+    }
+  }
+}

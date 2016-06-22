@@ -18,7 +18,25 @@
 @launch-btn-size:			    100px;
 
 //** Spacing
-@launch-btn-gutter-width:       15px; // bring inline with main RA styles.
+@grid-gutter-width: 			15px;  // bring inline with main RA styles.
+@launch-btn-gutter-width:       @grid-gutter-width;
+
+
+//== Info button
+//
+//##
+@info-link-color:               @launch-btn-fill-color-open;
+@info-link-hover-color:         @launch-btn-fill-color-open;
+@info-link-hover-decoration:    underline;
+@info-link-font-size:			26px;
+@btn-link-disabled-color:       fade(@launch-btn-fill-color-open, 50%);
+
+
+//== Info modla
+//
+//##
+@info-modal-background:			#fff;
+@info-modal-font-size:			@info-link-font-size;
 
 
 //== Tooltips
@@ -59,6 +77,8 @@
 @zindex-launch-btn:        100;
 @zindex-tooltip:           1000;
 @zindex-launch-button:     1010;
+@zindex-info:			   1020;
+@zindex-info-btn:	       1030;
 
 
 //== Media queries breakpoints

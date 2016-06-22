@@ -1,29 +1,21 @@
 ( function ( $ ) {
-    /*
-    // Detect Mobile Browser
-    function mobilecheck() {
-        var check = false;
-        (function(a){if(/(android|ipad|playbook|silk|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))check = true;})(navigator.userAgent||navigator.vendor||window.opera);
-        return check;
-    }
-    */
 
     // Definitions
     var takeover = false;
-        //eventtype = mobilecheck() ? 'touchstart' : 'click';
     
     function ot_button_markUp() {
         var paths = {
               rest: 'M281,150c0,71.797-59.203,131-131,131S19,221.797,19,150S78.203,19,150,19S281,78.203,281,150z',
               active: 'M251,150c0,93.5-29.203,143-101,143S49,243.5,49,150C49,52.5,78.203,7,150,7S251,51.5,251,150z'
             },
+            infoTxt = 'This year, the students have collaborated with digital arts commissioning organisation Opening Times on a project to stage an intervention of artwork into the fabric of the RA website. The visitor will encounter the take-over by clicking through on a button on the RA Schools page where 17 avatars will appear. Each avatar represents a student in the show, and when one of these is selected, the website will be animated with imagery and audio, becoming a work itself. The work will be live on the website for the duration of the exhibition.',
             students = ['Rhys Coren', 'Rian Coughlan', 'Elliot Dodd', 'Alana Francis', 'Kira Freije', 'Gery Georgieva', 'Anna Hughes', 'Frank Kent', 'Neill Kidgell', 'Jack Killick', 'Molly Palmer', 'Anna Paterson', 'Robin Seir', 'Rafal Topolewski', 'Claire Undy', 'Wanda Wieser', 'Tom Worsfold'],
             alanaSounds = ['alana-sound-1.mp3', 'alana-sound-2.mp3', 'alana-sound-3.mp3', 'alana-sound-4.mp3', 'alana-sound-5.mp3'],
             alanaSound = alanaSounds[Math.floor(Math.random()*alanaSounds.length)],
             // Since the markup is constant, let's just create a single string of HTML
             sounds = '<audio id="ot-noise" src="" loop></audio>',
             overlay = '<div id="ot-overlay"></div>',
-            info = '<div id="ot-info"></div>',
+            info = '<button class="ot-btn-info ot-btn-link hidden" data-toggle="ot-info">Info</button><div id="ot-info" class="ot-info-container hidden"><div class="ot-info-container-inner"><p>' + infoTxt + '</p></div></div>',
             otButton = '<div class="ot-btn-container">' +
                          '<div class="ot-btn-main">' +
                            '<nav class="ot-btn-main-menu">' +
@@ -36,23 +28,23 @@
                                '<span>Click</span>' +
                              '</button>' +
                              '<ul id="student-list" class="ot-btn-menu-items" role="group">' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[0] + '" data-placement="right" data-mp3="../../assets/rhys-sound.mp3" data-tint="#00ff00"><img src="../../assets/rhys-button.jpg"><span class="sr-only">' + students[0] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[1] + '" data-placement="top" data-mp3="../../assets/rian-sound.mp3" data-tint="#bada55"><img src="../../assets/rian-button.jpg"><span class="sr-only">' + students[1] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[2] + '" data-placement="left" data-mp3="../../assets/elliot-sound.mp3" data-tint="#0000ff"><img src="../../assets/elliot-button.jpg"><span class="sr-only">' + students[2] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[3] + '" data-placement="left" data-mp3="../../assets/' + alanaSound + '" data-tint="#e7eaad"><img src="../../assets/alana-button.jpg"><span class="sr-only">' + students[3] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[4] + '" data-placement="left" data-mp3="../../assets/kira-sound.mp3" data-tint="#009c3b"><img src="../../assets/kira-button.png"><span class="sr-only">' + students[4] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[5] + '" data-placement="left" data-mp3="../../assets/gery-sound.m4a" data-tint="#ffc0cb"><img src="../../assets/gery-button.jpg"><span class="sr-only">' + students[5] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[6] + '" data-placement="left" data-mp3="../../assets/anna-h-sound.mp3" data-tint="#cccfff"><img src="../../assets/anna-h-button.jpg"><span class="sr-only">' + students[6] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[7] + '" data-placement="bottom" data-mp3="../../assets/WET_SLOW.mp3" data-tint="#00ffff"><img src="../../assets/frank-button.jpg"><span class="sr-only">' + students[7] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[8] + '" data-placement="bottom" data-mp3="../../assets/neill-sound.mp3" data-tint="#ffff00"><img src="../../assets/neill-button.jpg"><span class="sr-only">' + students[8] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[9] + '" data-placement="top" data-mp3="../../assets/jack-sound.mp3" data-tint="#ff0000"><img src="../../assets/jack-button.jpg"><span class="sr-only">' + students[9] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[10] + '" data-placement="top" data-mp3="../../assets/molly-sound.mp3" data-tint="#a26243"><img src="../../assets/molly-button.jpg"><span class="sr-only">' + students[10] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[11] + '" data-placement="top" data-mp3="../../assets/anna-p-sound.mp3" data-tint="#ffffff"><img src="../../assets/anna-p-button.jpg"><span class="sr-only">' + students[11] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[12] + '" data-placement="top" data-mp3="../../assets/robin-sound.mp3" data-tint="#3abfb9"><img src="../../assets/robin-button.png"><span class="sr-only">' + students[12] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[13] + '" data-placement="top" data-mp3="../../assets/rafal-sound.mp3" data-tint="#c54250"><img src="../../assets/rafal-button.jpg"><span class="sr-only">' + students[13] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[14] + '" data-placement="top" data-mp3="../../assets/claire-sound.mp3" data-tint="#5ec3f1"><img src="../../assets/claire-button.jpg"><span class="sr-only">' + students[14] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[15] + '" data-placement="top" data-mp3="../../assets/wanda-sound.mp3" data-tint="#e0b095"><img src="../../assets/wanda-button.jpg"><span class="sr-only">' + students[15] + '</span></button></li>' +
-                               '<li><button type="button" data-toggle="ot-takover" data-tooltip="' + students[16] + '" data-placement="top" data-mp3="../../assets/tom-sound.mp3" data-tint="#673ab7"><img src="../../assets/tom-button.jpg"><span class="sr-only">' + students[16] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[0] + '" data-placement="right" data-mp3="../../assets/rhys-sound.mp3" data-tint="#00ff00"><img src="../../assets/rhys-button.jpg"><span class="sr-only">' + students[0] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[1] + '" data-placement="top" data-mp3="../../assets/rian-sound.mp3" data-tint="#bada55"><img src="../../assets/rian-button.jpg"><span class="sr-only">' + students[1] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[2] + '" data-placement="left" data-mp3="../../assets/elliot-sound.mp3" data-tint="#0000ff"><img src="../../assets/elliot-button.jpg"><span class="sr-only">' + students[2] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[3] + '" data-placement="left" data-mp3="../../assets/' + alanaSound + '" data-tint="#e7eaad"><img src="../../assets/alana-button.jpg"><span class="sr-only">' + students[3] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[4] + '" data-placement="left" data-mp3="../../assets/kira-sound.mp3" data-tint="#009c3b"><img src="../../assets/kira-button.png"><span class="sr-only">' + students[4] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[5] + '" data-placement="left" data-mp3="../../assets/gery-sound.m4a" data-tint="#ffc0cb"><img src="../../assets/gery-button.jpg"><span class="sr-only">' + students[5] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[6] + '" data-placement="left" data-mp3="../../assets/anna-h-sound.mp3" data-tint="#cccfff"><img src="../../assets/anna-h-button.jpg"><span class="sr-only">' + students[6] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[7] + '" data-placement="bottom" data-mp3="../../assets/WET_SLOW.mp3" data-tint="#00ffff"><img src="../../assets/frank-button.jpg"><span class="sr-only">' + students[7] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[8] + '" data-placement="bottom" data-mp3="../../assets/neill-sound.mp3" data-tint="#ffff00"><img src="../../assets/neill-button.jpg"><span class="sr-only">' + students[8] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[9] + '" data-placement="top" data-mp3="../../assets/jack-sound.mp3" data-tint="#ff0000"><img src="../../assets/jack-button.jpg"><span class="sr-only">' + students[9] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[10] + '" data-placement="top" data-mp3="../../assets/molly-sound.mp3" data-tint="#a26243"><img src="../../assets/molly-button.jpg"><span class="sr-only">' + students[10] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[11] + '" data-placement="top" data-mp3="../../assets/anna-p-sound.mp3" data-tint="#ffffff"><img src="../../assets/anna-p-button.jpg"><span class="sr-only">' + students[11] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[12] + '" data-placement="top" data-mp3="../../assets/robin-sound.mp3" data-tint="#3abfb9"><img src="../../assets/robin-button.png"><span class="sr-only">' + students[12] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[13] + '" data-placement="top" data-mp3="../../assets/rafal-sound.mp3" data-tint="#c54250"><img src="../../assets/rafal-button.jpg"><span class="sr-only">' + students[13] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[14] + '" data-placement="top" data-mp3="../../assets/claire-sound.mp3" data-tint="#5ec3f1"><img src="../../assets/claire-button.jpg"><span class="sr-only">' + students[14] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[15] + '" data-placement="top" data-mp3="../../assets/wanda-sound.mp3" data-tint="#e0b095"><img src="../../assets/wanda-button.jpg"><span class="sr-only">' + students[15] + '</span></button></li>' +
+                               '<li><button data-toggle="ot-takover" data-tooltip="' + students[16] + '" data-placement="top" data-mp3="../../assets/tom-sound.mp3" data-tint="#673ab7"><img src="../../assets/tom-button.jpg"><span class="sr-only">' + students[16] + '</span></button></li>' +
                              '</ul>' +
                            '</nav>' + 
                          '</div>' +
@@ -108,6 +100,9 @@
             el.attr('aria-expanded', function (i, attr) {
                 return attr === 'true' ? 'false' : 'true';
             });
+
+            // Toggle the info button visibility
+            $('.ot-btn-info').toggleClass('hidden');
             
             // Switch between the svg paths
             otPath.stop().animate({'path' : paths.active}, 150, mina.easein, function() {
@@ -143,12 +138,7 @@
                     $(this).parents('svg').replaceWith($('<h2 class="' + originalClass + '">' + $( this ).text() + '</h2>'));
                 });
 
-                // If we close on Claire Undy's piece, remove the overlay
-                /*
-                if ( $('.undy-pillows-top').length ){
-                  $('.undy-pillows-top').remove();
-                }
-                */
+                // If we close on one of the overlay pieces, remove the overlay
                 $('#ot-overlay').removeClass('active undy-pillows-top');
 
                 takeover = false;
@@ -286,9 +276,26 @@
         }
     }
 
+    // Toogle the info panel
+    function ot_info_panel() {
+        var otInfo = $('.ot-info-container');
+        
+        $('[data-toggle="ot-info"]').on('click', function(e){
+            e.preventDefault();
+
+            otInfo.toggleClass('hidden');
+            $('body').toggleClass('ot-modal-open');
+        });
+
+        otInfo.click(function(){
+            $(this).toggleClass('hidden');
+        });
+    }
+
     $(document).ready(function() {
         ot_button_markUp();
         ot_expand_menu();
         ot_launch_takeOver();
+        ot_info_panel();
     });
 })( jQuery );
