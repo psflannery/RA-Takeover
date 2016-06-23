@@ -15,7 +15,7 @@
             // Since the markup is constant, let's just create a single string of HTML
             sounds = '<audio id="ot-noise" src="" loop></audio>',
             overlay = '<div id="ot-overlay"></div>',
-            info = '<button class="ot-btn-info ot-btn-link hidden" data-toggle="ot-info">Info</button><div id="ot-info" class="ot-info-container hidden"><div class="ot-info-container-inner"><p>' + infoTxt + '</p></div></div>',
+            info = '<button class="ot-btn-info ot-btn-link ot-hidden" data-toggle="ot-info">Info</button><div id="ot-info" class="ot-info-container ot-hidden"><div class="ot-info-container-inner"><p>' + infoTxt + '</p></div></div>',
             otButton = '<div class="ot-btn-container">' +
                          '<div class="ot-btn-main">' +
                            '<nav class="ot-btn-main-menu">' +
@@ -102,7 +102,7 @@
             });
 
             // Toggle the info button visibility
-            $('.ot-btn-info').toggleClass('hidden');
+            $('.ot-btn-info').toggleClass('ot-hidden');
             
             // Switch between the svg paths
             otPath.stop().animate({'path' : paths.active}, 150, mina.easein, function() {
@@ -283,12 +283,12 @@
         $('[data-toggle="ot-info"]').on('click', function(e){
             e.preventDefault();
 
-            otInfo.toggleClass('hidden');
+            otInfo.toggleClass('ot-hidden');
             $('body').toggleClass('ot-modal-open');
         });
 
         otInfo.click(function(){
-            $(this).toggleClass('hidden');
+            $(this).toggleClass('ot-hidden');
         });
     }
 
