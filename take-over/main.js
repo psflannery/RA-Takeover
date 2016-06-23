@@ -122,7 +122,7 @@
                 return;
             } else {
                 $('.content').removeClass('ot-takeover').css('background', '');
-                $('li').css('background', ''); // test
+                //$('li').css('background', ''); // test
                 $('[data-toggle="ot-takover"]').removeClass('is-active').attr('disabled', false);
                 $('body').removeClass(); //.css('overflow', 'auto');
 
